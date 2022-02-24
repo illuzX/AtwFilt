@@ -14,7 +14,7 @@ logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 
-@IlluzX.on_callback_query(Worker.regex(r'^index'))
+@illuzX.on_callback_query(Worker.regex(r'^index'))
 async def index_files(bot, query):
     if query.data.startswith('index_cancel'):
         CANCEL = True
@@ -49,7 +49,7 @@ async def index_files(bot, query):
     await index_files_to_db(int(lst_msg_id), chat, msg, bot)
 
 
-@LuciferMoringstar_Robot.on_message((Worker.forwarded | (Worker.regex("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")) & Worker.text ) & Worker.private & Worker.incoming)
+@illuzX.on_message((Worker.forwarded | (Worker.regex("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")) & Worker.text ) & Worker.private & Worker.incoming)
 async def send_for_index(bot, message):
     if message.text:
         regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
@@ -120,7 +120,7 @@ async def send_for_index(bot, message):
     await message.reply('ThankYou For the Contribution, Wait For My Moderators to verify the files.')
 
 
-@LuciferMoringstar_Robot.on_message(Worker.command('setskip') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('setskip') & Worker.user(ADMINS))
 async def set_skip_number(bot, message):
     if ' ' in message.text:
         _, skip = message.text.split(" ")
