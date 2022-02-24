@@ -1,10 +1,10 @@
-from pyrogram import Client as IlluzX, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import save_file
 from config import CHANNELS, ADMINS
 
 media_filter = Worker.document | Worker.video | Worker.audio
 
-@IlluzX.on_message(Worker.chat(CHANNELS) & media_filter)
+@illuzX.on_message(Worker.chat(CHANNELS) & media_filter)
 async def media(bot, message):
 
     for file_type in ("document", "video", "audio"):
@@ -19,7 +19,7 @@ async def media(bot, message):
     await save_file(media)
 
 
-@IlluzX.on_message(Worker.command('channel') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('channel') & Worker.user(ADMINS))
 async def channel_info(bot, message):
     
     if isinstance(CHANNELS, (int, str)):
