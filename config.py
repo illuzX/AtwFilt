@@ -14,7 +14,7 @@ def is_enabled(value, default):
 API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
-START_MSG = environ.get("START_MSG", plugins.DEFAULT_MSG)
+START_MSG = environ.get("START_MSG")
 BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/d87c11c571a078d7ad86c.jpg')).split()
 SUPPORT = environ.get("SUPPORT", "t.me/mvbzzer")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
