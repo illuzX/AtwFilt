@@ -19,7 +19,6 @@ async def start_message(bot, message):
              ],[ 
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("Join", url="https://t.me/mvbseries")
              ]
         else:
             buttons = [
@@ -27,7 +26,6 @@ async def start_message(bot, message):
              ],[ 
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("Join", url="https://t.me/mvbseries")
              ]
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
