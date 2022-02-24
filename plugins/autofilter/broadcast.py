@@ -13,7 +13,7 @@ import time
 import os
 from random import choice
 from config import ADMINS
-from pyrogram import Client as IlluzX, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.broadcast_db import Database
 from pyrogram.errors import UserNotParticipant, FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
