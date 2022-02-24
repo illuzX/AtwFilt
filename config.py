@@ -14,14 +14,14 @@ def is_enabled(value, default):
 API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
-START_MSG = environ.get("START_MSG", LuciferMoringstar.DEFAULT_MSG)
+START_MSG = environ.get("START_MSG", plugins.DEFAULT_MSG)
 BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/d87c11c571a078d7ad86c.jpg')).split()
 SUPPORT = environ.get("SUPPORT", "t.me/mvbzzer")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", None))
 DATABASE_URI = environ.get("DATABASE_URI", None)
 FORCE = environ.get('FORCES_SUB')
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", .FILE_CAPTIONS)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION",)
 DEV_NAME = environ.get("DEV_NAME")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
