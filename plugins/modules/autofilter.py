@@ -6,7 +6,8 @@ from config import BUTTONS, bot_info, SPELL_MODE, SUPPORT, BOT_PICS
 from startup import AtwFilt
 
 
-#@LuciferMoringstar_Robot.on_message(Worker.text & Worker.group & Worker.incoming & Worker.chat(AUTH_GROUPS) if AUTH_GROUPS else Worker.text & Worker.group & Worker.incoming)
+#everthing---Is Vidhi Vere Nth Parayana 
+
 async def group_filters(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
@@ -127,7 +128,7 @@ async def pm_autofilter(client, message):
                 photo=random.choice(BOT_PICS),
                 caption=AtwFilt.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("Google", url=f"www.google.com")
+                   InlineKeyboardButton("Google", url="🔎www.google.com🔍")
                    ]]
                 )
             )
