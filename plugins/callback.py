@@ -250,8 +250,11 @@ async def cb_handler(client: illuzX, query):
                 if f_caption is None:
                     f_caption = LuciferMoringstar.FILE_CAPTIONS
                 buttons = [[
+                  
                   InlineKeyboardButton('🧑‍💻 JOIN CHANNEL 🧑‍💻', url='https://t.me/mvbzzer')
-                  ]]                 
+                  ],[
+                  InlineKeyboardButton('How To use me',url='https://t.me/+yLl6NWgOVdc2MDVl')
+                  ] ]
                 
                 await query.answer()
                 await client.send_cached_media(
@@ -269,18 +272,20 @@ async def cb_handler(client: illuzX, query):
             if query.from_user.id not in ADMINS: 
                 buttons=[
                  InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                ],[
                  InlineKeyboardButton("😎 About", callback_data="about") 
                  ],[
                  InlineKeyboardButton("🗳 JOIN UPDATE CHANNEL", url="https://t.me/mvbzzer"),
-                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
+
                  ]
             else:
                 buttons = [
                  InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                ],[
                  InlineKeyboardButton("😎 About", callback_data="about") 
                  ],[
-                 InlineKeyboardButton('JOIN UPDATE CHANNEL', url="https://youtu.be/FCU_XJmyG_U"),
-                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
+                 InlineKeyboardButton("🗳 JOIN UPDATE CHANNEL", url="https://t.me/mvbzzer"),
+
                  ]              
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -289,21 +294,21 @@ async def cb_handler(client: illuzX, query):
               InlineKeyboardButton("🏠 Home", callback_data="Me"),
               InlineKeyboardButton("About 😎", callback_data="about")
               ]]               
-            await query.message.edit(text=LuciferMoringstar.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [[
              InlineKeyboardButton("🏠 Home", callback_data="start"),
              InlineKeyboardButton("Close 🗑️", callback_data="close")
              ]]               
-            await query.message.edit(text=LuciferMoringstar.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "bot_owner":
             buttons = [[
              InlineKeyboardButton('🏠 Home', callback_data="start"),
              InlineKeyboardButton('About 😎', callback_data="about")
              ]]               
-            await query.message.edit(text=LuciferMoringstar.PR0FESS0R_99.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt. illuzX.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "pages":
             await query.answer()
