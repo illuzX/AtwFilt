@@ -1,12 +1,12 @@
 import logging
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
+from pyrogram import Client as IlluzX, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from LuciferMoringstar_Robot.database.autofilter_db import Media
+from plugins.database.autofilter_db import Media
 from config import ADMINS
 logger = logging.getLogger(__name__)
 
 
-@LuciferMoringstar_Robot.on_message(Worker.command('delete') & Worker.user(ADMINS))
+@IlluzX.on_message(Worker.command('rmvd') & Worker.user(ADMINS))
 async def delete(bot, message):
 
     reply = message.reply_to_message
@@ -35,7 +35,7 @@ async def delete(bot, message):
         await msg.edit('File Not Found In Database')
 
 
-@LuciferMoringstar_Robot.on_message(Worker.command('deleteall') & Worker.user(ADMINS))
+@IlluzX.on_message(Worker.command('rmv') & Worker.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
         text="This will delete all indexed files.\nDo you want to continue??",
