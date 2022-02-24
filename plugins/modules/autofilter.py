@@ -1,7 +1,7 @@
 import re, asyncio, random
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from plugins.database._utils import get_size, split_list
-from plusgins.database.autofilter_db import get_filter_results, get_poster
+from plugins.database.autofilter_db import get_filter_results, get_poster
 from config import BUTTONS, bot_info, SPELL_MODE, SET_SPEL_M, SUPPORT, BOT_PICS
 from startup import AtwFilt
 
