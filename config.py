@@ -15,7 +15,7 @@ API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
 START_MSG = environ.get("START_MSG", LuciferMoringstar.DEFAULT_MSG)
-BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/8d4e4693a8a907cb51797.jpg')).split()
+BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/d87c11c571a078d7ad86c.jpg')).split()
 SUPPORT = environ.get("SUPPORT", "t.me/mvbzzer")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
 SET_SPEL_M = environ.get("SPELL_MODE_TEXT  .SPELL_CHECK)
@@ -33,7 +33,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 # ==================================
 # Empty 😂
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', 400))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 BUTTONS = {}
 CURRENT = int(environ.get("SKIP", 2))
