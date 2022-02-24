@@ -65,7 +65,7 @@ async def cb_handler(client: illuzX, query):
                 )
                 return
 
-        elif query.data.startswith("backgroup"):
+        elif query.data.startswith("AtwFilt"):
             ident, index, keyword = query.data.split("_")
             try:
                 data = BUTTONS[keyword]
@@ -271,18 +271,16 @@ async def cb_handler(client: illuzX, query):
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
                 buttons=[
-                 InlineKeyboardButton("Search Again",switch_inline_query_current_chat=query)
                 ],[
-                 InlineKeyboardButton("About me", callback_data="about") 
+                 InlineKeyboardButton("About-me", callback_data="about") 
                  ],[
                  InlineKeyboardButton("🗳 JOIN CHANNEL", url="https://t.me/mvbzzer"),
 
                  ]
             else:
                 buttons = [
-                 InlineKeyboardButton("Search Again",switch_inline_query_current_chat=query)
                 ],[
-                 InlineKeyboardButton("About me", callback_data="about") 
+                 InlineKeyboardButton("About", callback_data="about") 
                  ],[
                  InlineKeyboardButton("🗳 JOIN CHANNEL", url="https://t.me/mvbzzer"),
 
