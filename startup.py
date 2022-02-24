@@ -5,14 +5,14 @@ class AtwFilt(object):
     HELP_MSG = """**this is a wrong place vro+**"""
 
     ABOUT_MSG = """
-🤖 My Name [{bot_name}](t.me/{bot_username})
+ My Name [{bot_name}](t.me/{bot_username})
 
-🧑 My Dev : [illuzX](t.me/Grayhathacker767)
+ My Dev : [illuzX](t.me/Grayhathacker767)
 
-🧑 My Creator : [Move Bazzer]
+ My Creator : [Move Bazzer]
 
 
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
+    FILE_CAPTIONS = """Hello  {mention}\n\nTitle {title}\n\nSize {size}"""
 
     illuzX = """
 **ADMINS COMMANDS**
@@ -26,7 +26,7 @@ class AtwFilt(object):
 
     ADD_YOUR_GROUP = """**__pls ask This [{query}] on this group__**"""
     SPELL_CHECK = """
-Hello 👋〘 {mention} 〙,
+Hello 〘 {mention} 〙,
 
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
