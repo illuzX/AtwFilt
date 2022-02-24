@@ -1,11 +1,11 @@
 # https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/index.py
 # (Old Code) Thanks To EvamariaTG 
 import logging, os, asyncio
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
 from config import ADMINS, LOG_CHANNEL, CURRENT, CANCEL
-from LuciferMoringstar_Robot.database.autofilter_db import save_file
+from plugins.database.autofilter_db import save_file
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import re
@@ -14,7 +14,7 @@ logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 
-@LuciferMoringstar_Robot.on_callback_query(Worker.regex(r'^index'))
+@IlluzX.on_callback_query(Worker.regex(r'^index'))
 async def index_files(bot, query):
     if query.data.startswith('index_cancel'):
         CANCEL = True
