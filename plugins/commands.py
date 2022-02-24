@@ -14,21 +14,25 @@ async def start_message(bot, message):
         await db.add_user(message.from_user.id)
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
-            buttons =[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton('JOIN UPDATE CHANNEL', url="https://youtu.be/FCU_XJmyG_U"),
-                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
-                 ]
+            buttons = [[
+             InlineKeyboardButton("Search Again",switch_inline_query_current_chat=query)
+             ],[
+             InlineKeyboardButton("Join Channel", url="t.me/mvbzzer"),
+             ],[ 
+             InlineKeyboardButton("😎 About", callback_data="about") 
+             ],[
+             InlineKeyboardButton("Join", url="https://t.me/mvbseries")
+             ]]
         else:
-            buttons =[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton('JOIN UPDATE CHANNEL', url="https://youtu.be/FCU_XJmyG_U"),
-                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
-                 ]    
+            buttons = [[
+             InlineKeyboardButton("Search Again",switch_inline_query_current_chat=query)
+             ],[
+             InlineKeyboardButton("Join Channel", url="t.me/mvbzzer"),
+             ],[ 
+             InlineKeyboardButton("😎 About", callback_data="about") 
+             ],[
+             InlineKeyboardButton("Join", url="https://t.me/mvbseries")
+             ]]   
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
@@ -53,7 +57,7 @@ async def help(bot, message):
      ]]
     await message.reply_photo(
         photo = choice(BOT_PICS),
-        caption=LuciferMoringstar.HELP_MSG.format(mention=message.from_user.mention),
+        caption=AtwFilt.HELP_MSG.format(mention=message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(button))
       
 @illuzX.on_message(Worker.private & Worker.command(["about"]))
@@ -64,6 +68,6 @@ async def about(bot, message):
      ]]  
     await message.reply_photo(
         photo = choice(BOT_PICS),
-        caption=.ABOUT_MSG.format(mention=message.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME),
+        caption=AtwFilt.ABOUT_MSG.format(mention=message.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME),
         reply_markup=InlineKeyboardMarkup(button))
         
