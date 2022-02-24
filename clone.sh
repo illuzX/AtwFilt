@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot.git /LuciferMoringstar-Robot
+  git clone https://github.com/illuzX/AtwFilt.git /AtwFilt
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /LuciferMoringstar-Robot
+  git clone $UPSTREAM_REPO /AtwFilt
 fi
-cd /LuciferMoringstar-Robot
+cd /AtwFilt
 pip3 install -U -r requirements.txt
-echo "Starting LuciferMoringstar RoBot...."
+echo "AtwFilt bot runing...."
 python3 main.py
