@@ -1,10 +1,10 @@
 import logging
-from pyrogram import Client as IlluzX, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import Media
 from config import ADMINS
 logger = logging.getLogger(__name__)
 
-@IlluzX.on_message(Worker.command('myDb') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('myDb') & Worker.user(ADMINS))
 async def total(bot, message):
 
     msg = await message.reply("Processing...⏳", quote=True)
