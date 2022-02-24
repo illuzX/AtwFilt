@@ -45,7 +45,7 @@ async def start_message(bot, message):
         )
         return
    
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["help"]))
+@illuzX.on_message(Worker.private & Worker.command(["help"]))
 async def help(bot, message):
     button = [[
      InlineKeyboardButton("🏠 Home", callback_data="start"),
@@ -56,7 +56,7 @@ async def help(bot, message):
         caption=LuciferMoringstar.HELP_MSG.format(mention=message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(button))
       
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["about"]))
+@illuzX.on_message(Worker.private & Worker.command(["about"]))
 async def about(bot, message):
     button = [[
      InlineKeyboardButton("🏠 Home", callback_data="start"),
