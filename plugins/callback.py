@@ -2,7 +2,7 @@ from pyrogram import Client as illuzX, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserIsBlocked, PeerIdInvalid
 from AtwFilt.database.autofilter_db import is_subscribed, get_file_details
-from AtwFilt.database._utils import get_size
+from plugins.database._utils import get_size
 from startup import AtwFilt
 from config import BUTTONS, FORCES_SUB, CUSTOM_FILE_CAPTION, START_MSG, DEV_NAME, bot_info, ADMINS
 
