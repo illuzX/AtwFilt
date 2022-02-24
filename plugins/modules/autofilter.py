@@ -128,7 +128,7 @@ async def pm_autofilter(client, message):
                 photo=random.choice(BOT_PICS),
                 caption=AtwFilt.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("Google", url="🔎www.google.com🔍")
+                   InlineKeyboardButton("Join", url=f"{SUPPORT}")
                    ]]
                 )
             )
