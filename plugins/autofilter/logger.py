@@ -4,7 +4,7 @@ from config import ADMINS
 logger = logging.getLogger(__name__)
 
 
-@IlluzX.on_message(Worker.command('logger') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('logger') & Worker.user(ADMINS))
 async def log_file(bot, message):
     """Send log file"""
     try:
