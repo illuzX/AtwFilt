@@ -1,6 +1,6 @@
 import re
 from os import environ
-from startup import LuciferMoringstar
+from startup import AtwFilt
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
     if value.lower() in ["true", "yes", "1", "enable", "on"]:
@@ -16,14 +16,14 @@ API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
 START_MSG = environ.get("START_MSG", LuciferMoringstar.DEFAULT_MSG)
 BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/8d4e4693a8a907cb51797.jpg')).split()
-SUPPORT = environ.get("SUPPORT", "t.me/Mo_Tech_YT")
+SUPPORT = environ.get("SUPPORT", "t.me/mvbzzer")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
-SET_SPEL_M = environ.get("SPELL_MODE_TEXT", LuciferMoringstar.SPELL_CHECK)
+SET_SPEL_M = environ.get("SPELL_MODE_TEXT  .SPELL_CHECK)
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", None))
 DATABASE_URI = environ.get("DATABASE_URI", None)
 FORCE = environ.get('FORCES_SUB')
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", LuciferMoringstar.FILE_CAPTIONS)
-DEV_NAME = environ.get("DEV_NAME", "Muhammed")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", .FILE_CAPTIONS)
+DEV_NAME = environ.get("DEV_NAME")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
