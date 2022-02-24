@@ -1,8 +1,4 @@
-# (c) [Muhammed] @PR0FESS0R-99
-# (s) @Mo_Tech_YT , @Mo_Tech_Group, @MT_Botz
-# Copyright permission under MIT License
-# All rights reserved by PR0FESS0R-99
-
+# (c) [illuzX]
 import logging
 logger = logging.getLogger(__name__)
 
@@ -17,8 +13,8 @@ import time
 import os
 from random import choice
 from config import ADMINS
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
-from LuciferMoringstar_Robot.database.broadcast_db import Database
+from pyrogram import Client as IlluzX, filters as Worker
+from plugins.database.broadcast_db import Database
 from pyrogram.errors import UserNotParticipant, FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
 db = Database() 
@@ -42,7 +38,7 @@ async def send_msg(user_id, message):
         return 500, f"{user_id} : {traceback.format_exc()}\n"
 
 
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["broadcast", "send"]) & Worker.user(ADMINS) & Worker.reply)
+@illuzX.on_message(Worker.private & Worker.command(["broadcast", "send"]) & Worker.user(ADMINS) & Worker.reply)
 async def broadcast_(c, m):
     print("broadcasting......")
     all_users = await db.get_all_users()
