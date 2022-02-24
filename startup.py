@@ -29,7 +29,7 @@ class AtwFilt(object):
 
     FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
 
-    PR0FESS0R_99 = """
+    illuzX = """
 **ADMINS COMMANDS**
 
  » /broadcast - Reply Any Media Or Message
