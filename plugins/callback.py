@@ -1,14 +1,14 @@
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserIsBlocked, PeerIdInvalid
-from LuciferMoringstar_Robot.database.autofilter_db import is_subscribed, get_file_details
-from LuciferMoringstar_Robot.database._utils import get_size
-from translation import LuciferMoringstar
+from AtwFilt.database.autofilter_db import is_subscribed, get_file_details
+from AtwFilt.database._utils import get_size
+from startup import AtwFilt
 from config import BUTTONS, FORCES_SUB, CUSTOM_FILE_CAPTION, START_MSG, DEV_NAME, bot_info, ADMINS
 
 
-@LuciferMoringstar_Robot.on_callback_query()
-async def cb_handler(client: LuciferMoringstar_Robot, query):
+@illuzX.on_callback_query()
+async def cb_handler(client: illuzX, query):
     clicked = query.from_user.id
     try:
         typed = query.message.reply_to_message.from_user.id
@@ -151,7 +151,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                 )
                 return
 
-        elif query.data.startswith("backbot"):
+        elif query.data.startswith("AtwFilt"):
             ident, index, keyword = query.data.split("_")
             try:
                 data = BUTTONS[keyword]
@@ -193,7 +193,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
 
-        elif query.data.startswith("lucifermoringstar_robot"):
+        elif query.data.startswith("AtwFilt"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -250,7 +250,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                 if f_caption is None:
                     f_caption = LuciferMoringstar.FILE_CAPTIONS
                 buttons = [[
-                  InlineKeyboardButton('🧑‍💻 How To Own 🧑‍💻', url='https://t.me/Mo_Tech_Group')
+                  InlineKeyboardButton('🧑‍💻 JOIN CHANNEL 🧑‍💻', url='https://t.me/mvbzzer')
                   ]]                 
                 
                 await query.answer()
@@ -267,30 +267,26 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
 
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
-                buttons = [[
-                 InlineKeyboardButton("➕️ Add me to Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
-                 ],[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/FCU_XJmyG_U"),
-                 InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_Group")
-                 ]]
-            else:
-                buttons = [[
-                 InlineKeyboardButton("➕️ Add me to Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
-                 ],[
+                buttons=[
                  InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
                  InlineKeyboardButton("😎 About", callback_data="about") 
                  ],[
-                 InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/FCU_XJmyG_U"),
-                 InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_Group")
-                 ]]               
+                 InlineKeyboardButton("🗳 JOIN UPDATE CHANNEL", url="https://t.me/mvbzzer"),
+                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
+                 ]
+            else:
+                buttons = [
+                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton('JOIN UPDATE CHANNEL', url="https://youtu.be/FCU_XJmyG_U"),
+                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
+                 ]              
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "help":
             buttons = [[
-              InlineKeyboardButton("🏠 Home", callback_data="start"),
+              InlineKeyboardButton("🏠 Home", callback_data="Me"),
               InlineKeyboardButton("About 😎", callback_data="about")
               ]]               
             await query.message.edit(text=LuciferMoringstar.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
