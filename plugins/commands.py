@@ -1,38 +1,34 @@
 from random import choice
 from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from translation import LuciferMoringstar
-from LuciferMoringstar_Robot.database.broadcast_db import Database
+from startup import AtwFilt
+from plugins.database.broadcast_db import Database
 
 db = Database()
 
 
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["start"]))
+@illuzX.on_message(Worker.private & Worker.command(["start"]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
-            buttons = [[
-             InlineKeyboardButton("➕️ Add me to Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
-             ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-             InlineKeyboardButton("😎 About", callback_data="about") 
-             ],[
-             InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/OTqZmADyOjU"),
-             InlineKeyboardButton("🤖 Support", url="https://t.me/Mo_Tech_YT")
-             ]]
+            buttons =[
+                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton('JOIN UPDATE CHANNEL', url="https://youtu.be/FCU_XJmyG_U"),
+                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
+                 ]
         else:
-            buttons = [[
-             InlineKeyboardButton("➕️ Add me to Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
-             ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-             InlineKeyboardButton("😎 About", callback_data="about") 
-             ],[
-             InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/OTqZmADyOjU"),
-             InlineKeyboardButton("🤖 Support", url="https://t.me/Mo_Tech_Group")
-             ]]    
+            buttons =[
+                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton('JOIN UPDATE CHANNEL', url="https://youtu.be/FCU_XJmyG_U"),
+                 InlineKeyboardButton("how to use", url="https://t.me/https://t.me/+yLl6NWgOVdc2MDVl")
+                 ]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
