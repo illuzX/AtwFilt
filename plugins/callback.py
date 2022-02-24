@@ -209,7 +209,7 @@ async def cb_handler(client: illuzX, query):
                         print(e)
                 f_caption=f_caption
             if f_caption is None:
-                f_caption = LuciferMoringstar.FILE_CAPTIONS.format(mention=query.from_user.mention, title=title, size=size)
+                f_caption = AtwFilt.FILE_CAPTIONS.format(mention=query.from_user.mention, title=title, size=size)
             
             try:
                 if FORCES_SUB and not await is_subscribed(client, query):
@@ -248,12 +248,12 @@ async def cb_handler(client: illuzX, query):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = LuciferMoringstar.FILE_CAPTIONS
+                    f_caption = AtwFilt.FILE_CAPTIONS
                 buttons = [[
                   
                   InlineKeyboardButton('🧑‍💻 JOIN CHANNEL 🧑‍💻', url='https://t.me/mvbzzer')
                   ],[
-                  InlineKeyboardButton('How To use me',url='https://t.me/+yLl6NWgOVdc2MDVl')
+                  InlineKeyboardButton('MOVIE Request GROUP ',url='https://t.me/+pbkjHwXnqrY4ZDFl')
                   ] ]
                 
                 await query.answer()
@@ -271,27 +271,27 @@ async def cb_handler(client: illuzX, query):
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
                 buttons=[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("Search Again",switch_inline_query_current_chat=query)
                 ],[
-                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 InlineKeyboardButton("About me", callback_data="about") 
                  ],[
-                 InlineKeyboardButton("🗳 JOIN UPDATE CHANNEL", url="https://t.me/mvbzzer"),
+                 InlineKeyboardButton("🗳 JOIN CHANNEL", url="https://t.me/mvbzzer"),
 
                  ]
             else:
                 buttons = [
-                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("Search Again",switch_inline_query_current_chat=query)
                 ],[
-                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 InlineKeyboardButton("About me", callback_data="about") 
                  ],[
-                 InlineKeyboardButton("🗳 JOIN UPDATE CHANNEL", url="https://t.me/mvbzzer"),
+                 InlineKeyboardButton("🗳 JOIN CHANNEL", url="https://t.me/mvbzzer"),
 
                  ]              
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "help":
             buttons = [[
-              InlineKeyboardButton("🏠 Home", callback_data="Me"),
+              InlineKeyboardButton("🏠 Home", callback_data="start"),
               InlineKeyboardButton("About 😎", callback_data="about")
               ]]               
             await query.message.edit(text=AtwFilt.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
