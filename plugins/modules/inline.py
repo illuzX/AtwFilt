@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or FORCES_SUB else CACHE_TIME
 
 
-@LuciferMoringstar_Robot.on_inline_query(Worker.user(AUTH_USERS) if AUTH_USERS else None)
+@illuzX.on_inline_query(Worker.user(AUTH_USERS) if AUTH_USERS else None)
 async def answer(bot, query):
 
     if FORCES_SUB and not await is_subscribed(bot, query):
