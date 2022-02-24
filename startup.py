@@ -30,11 +30,9 @@ class AtwFilt(object):
  » /total - How Many Files Saved
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
-
-    ADD_YOUR_GROUP = """**_ok vro bi__**"""
+ 
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
-
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
 📽️ Requested Movie : [{query}]({url})
