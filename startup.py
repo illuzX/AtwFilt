@@ -1,20 +1,35 @@
-class AtwFilt(object):
+class illuzX(object):
 
-    DEFAULT_MSG = """👋Hello {mention}.....!!!\nmy name is [{bot_name}](t.me/{bot_username}) \nyou can call me as  Auto Filter Bot ....!!!"""
+    DEFAULT_MSG = """👋Hello {mention}.....!!!\nIt's Power Full [{bot_name}](t.me/{bot_username}) Here 😎\nAdd Me To Your Group And Make Sure I'm an Admin There! \nAnd Enjoy My Pever Show.....!!!🤪"""
 
-    HELP_MSG = """**this is a wrong place vro+**"""
+    HELP_MSG = """**Help Veno Monuse 🤣**"""
 
     ABOUT_MSG = """
- My Name [{bot_name}](t.me/{bot_username})
+🤖 My Name [{bot_name}](t.me/{bot_username})
 
- My Dev : [illuzX](t.me/Grayhathacker767)
+🧑 My Dev : [illuzX](t.me/Grayhathacker767)
 
- My Creator : [Move Bazzer]
+🧑 My Creator : [Move Bazzer]
 
+📦 My Source : [Click Here](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
 
-    FILE_CAPTIONS = """Hello  {mention}\n\nTitle {title}\n\nSize {size}"""
+📺 My Tutorial : [Ckick Here](https://youtu.be/FCU_XJmyG_U)
 
-    illuzX = """
+🗃️ My Library : [Pyrogram](https://youtu.be/Af055Eozk9s)
+
+🖇️ My Language : [Python3](https://youtu.be/Af055Eozk9s)
+
+🗃️ My Database : [Mongodb](https://youtu.be/gBLTsH-IXr0)
+
+🗳️ My Server : [Heroku](https://youtu.be/xcZD55td6Vw)
+
+🏷️ My Updates : [Mo Tech](t.me/Mo_Tech_YT)
+
+🗣️ My Support : [Any Doubt](t.me/Mo_Tech_Group)"""
+
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
+
+    PR0FESS0R_99 = """
 **ADMINS COMMANDS**
 
  » /broadcast - Reply Any Media Or Message
@@ -24,9 +39,9 @@ class AtwFilt(object):
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
 
-    ADD_YOUR_GROUP = """**__pls ask This [{query}] on this group__**"""
+    ADD_YOUR_GROUP = """**__ഞാൻ ജോലി ചെയ്യുന്ന ഗ്രൂപ്പിൽ ചേരൂ, നിങ്ങൾക്ക് ആവശ്യമുള്ള എല്ലാ സിനിമകളും  ആ ഗ്രൂപ്പിൽ അഭ്യർത്ഥിക്കാം! ഇവിടെ അഭ്യർത്തിക്കരുത്..😤__**"""
     SPELL_CHECK = """
-Hello 〘 {mention} 〙,
+Hello 👋〘 {mention} 〙,
 
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
