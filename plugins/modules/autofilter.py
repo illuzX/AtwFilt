@@ -20,7 +20,7 @@ async def group_filters(client, message):
                 file_id = file.file_id
                 filename = f"{get_size(file.file_size)} {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", callback_data=f"lucifermoringstar_robot#{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", callback_data=f"AtwFilt#{file_id}")]
                 )
         else:
             if SPELL_MODE:
@@ -61,7 +61,7 @@ async def group_filters(client, message):
 
             imdb=await get_poster(search)
             if imdb and imdb.get('poster'):
-                dell=await message.reply_photo(photo=imdb.get('poster'), caption=LuciferMoringstar.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
+                dell=await message.reply_photo(photo=imdb.get('poster'), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
                 await asyncio.sleep(1000)
                 await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
             elif imdb:
