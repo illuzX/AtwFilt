@@ -16,7 +16,7 @@ async def start_message(bot, message):
         if message.from_user.id not in ADMINS: 
             buttons = [
              InlineKeyboardButton("Join Channel", url="t.me/mvbzzer")
-             InlineKeyboardButton("Series Channel", url="t.me/mvbseries"),
+             InlineKeyboardButton("Series Channel", url="t.me/mvbseries")
              ],[ 
              InlineKeyboardButton("😎 About", callback_data="about")
              ],[
