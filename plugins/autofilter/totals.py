@@ -16,7 +16,7 @@ async def total(bot, message):
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)
-    await rju.edit(startup.STATUS_TXT.format(files, total_users, totl_chats, size, free))
+    await rju.edit(startup.STATUS_TXT.format(files, total_users, totl_chats, size, free)),
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
