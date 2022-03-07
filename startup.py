@@ -19,7 +19,7 @@ class AtwFilt(object):
 
 🗳️ My Server :    Heroko """
 
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁🔻Title {title}\n\n🔍Size {size} """
 
     illuzX = """
 **ADMINS COMMANDS**
@@ -31,7 +31,7 @@ class AtwFilt(object):
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
  
-    ADD_YOUR_GROUP = """**__[{mention}] Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+    ADD_YOUR_GROUP = """**bro" Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
