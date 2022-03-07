@@ -1,14 +1,14 @@
 from random import choice
 from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME
-from pyrogram import Client as LuciferMoringstar_Robot, filters as Worker
+from pyrogram import Client as illuzX, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from translation import LuciferMoringstar
-from LuciferMoringstar_Robot.database.broadcast_db import Database
+from startup import AtwFilt
+from plugins.database.broadcast_db import Database
 
 db = Database()
 
 
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["start"]))
+@illuzX.on_message(Worker.private & Worker.command(["start"]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
@@ -49,7 +49,7 @@ async def start_message(bot, message):
         )
         return
    
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["help"]))
+@illuzX.on_message(Worker.private & Worker.command(["help"]))
 async def help(bot, message):
     button = [[
      InlineKeyboardButton("🏠 Home", callback_data="start"),
@@ -57,10 +57,10 @@ async def help(bot, message):
      ]]
     await message.reply_photo(
         photo = choice(BOT_PICS),
-        caption=LuciferMoringstar.HELP_MSG.format(mention=message.from_user.mention),
+        caption=AtwFilt.HELP_MSG.format(mention=message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(button))
       
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["about"]))
+@illuzX.on_message(Worker.private & Worker.command(["about"]))
 async def about(bot, message):
     button = [[
      InlineKeyboardButton("🏠 Home", callback_data="start"),
@@ -68,6 +68,6 @@ async def about(bot, message):
      ]]  
     await message.reply_photo(
         photo = choice(BOT_PICS),
-        caption=LuciferMoringstar.ABOUT_MSG.format(mention=message.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME),
+        caption=AtwFilt.ABOUT_MSG.format(mention=message.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME),
         reply_markup=InlineKeyboardMarkup(button))
         
