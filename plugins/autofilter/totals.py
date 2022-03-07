@@ -9,8 +9,14 @@ async def total(bot, message):
 
     msg = await message.reply("Processing...⏳", quote=True)
     try:
-        total = await Media.count_documents()
-        await msg.edit(f'📁 Boss here is youre command result: {total}')
+        total_users = await db.total_users_count()
+    totl_chats = await db.total_chat_count()
+    files = await Media.count_documents()
+    size = await db.get_db_size()
+    free = 536870912 - size
+    size = get_size(size)
+    free = get_size(free)
+    await rju.edit(startup.STATUS_TXT.format(files, total_users, totl_chats, size, free))
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
