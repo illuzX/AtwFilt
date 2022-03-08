@@ -1,6 +1,6 @@
 import re
 from os import environ
-from translation import LuciferMoringstar
+from startup import AtwFilt
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
     if value.lower() in ["true", "yes", "1", "enable", "on"]:
