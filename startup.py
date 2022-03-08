@@ -1,8 +1,9 @@
 class AtwFilt(object):
 
-    DEFAULT_MSG = """👋Hello {mention}.....!!!\nIt's Power Full [{bot_name}](t.me/{bot_username}) Here 😎\nAdd Me To Your Group And Make Sure I'm an Admin There! \nAnd Enjoy My Pever Show.....!!!🤪"""
+    DEFAULT_MSG = """👋Hello {mention}.....!!!\n my name  [{bot_name}](t.me/{bot_username}) you can Call me As[{Auto Filter Bot}](t.me/{bot_username}) 🌹\n i can Give Movies On Here  \njust ask A Movie name.....!!!🌹"""
 
-    HELP_MSG = """**Help Veno Monuse 🤣**"""
+    HELP_MSG = """**adich poyi Gooysh🤣
+    In Develpoment!!**"""
 
     ABOUT_MSG = """
 🤖 My Name [{bot_name}](t.me/{bot_username})
@@ -19,7 +20,7 @@ class AtwFilt(object):
 
 🗳️ My Server :    Heroko """
 
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title Mvb {title}\n\n🔘Size {size}"""
 
     illuzX = """
 **ADMINS COMMANDS**
@@ -37,7 +38,7 @@ class AtwFilt(object):
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
 
-    ADD_YOUR_GROUP = """**__[{mention}] Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+    ADD_YOUR_GROUP = """** Bro Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
