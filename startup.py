@@ -1,6 +1,6 @@
 class AtwFilt(object):
 
-    DEFAULT_MSG = """👋Hello {mention}.....!!!\n my name  [{bot_name}](t.me/{bot_username}) you can Call me As[{Auto Filter Bot}](t.me/{bot_username}) 🌹\n i can Give Movies On Here  \njust ask A Movie name.....!!!🌹"""
+    DEFAULT_MSG = """👋Hello {mention}.....!!!\n my name  [{bot_name}](t.me/{bot_username}) you can Call me As Auto Filter Bot🌹\n i can Give Movies On Here  \njust ask A Movie name.....!!!🌹"""
 
     HELP_MSG = """**adich poyi Gooysh🤣
     In Develpoment!!**"""
