@@ -15,22 +15,18 @@ async def start_message(bot, message):
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
             buttons = [[
-             InlineKeyboardButton("🔍Movies", url='t.me/mvbzzer')
+             InlineKeyboardButton("⚙️update Channel⚙️", url='t.me/mvbzzer')
              ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-             InlineKeyboardButton("😎 About", callback_data="about") 
+             InlineKeyboardButton("💾Group updates💾", url=('https://t.me/+pbkjHwXnqrY4ZDFl')
              ],[
-             InlineKeyboardButton(" 💠OTT UPDATES 💠", url="t.me/MalayalamOTTUpdatesMvb"),
              InlineKeyboardButton("🤖 Support", url="https://t.me/Mvbbotz")
              ]]
         else:
             buttons = [[
-             InlineKeyboardButton("🔍search",switch_inline_query_current_chat='')
+             InlineKeyboardButton("⚙️update Channel⚙️", url='t.me/mvbzzer')
              ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-             InlineKeyboardButton("😎 About", callback_data="about") 
+             InlineKeyboardButton("💾Group updates💾", url=('https://t.me/+pbkjHwXnqrY4ZDFl')
              ],[
-             InlineKeyboardButton(" 💠OTT UPDATES 💠", url="t.me/MalayalamOTTUpdatesMvb"),
              InlineKeyboardButton("🤖 Support", url="https://t.me/Mvbbotz")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
