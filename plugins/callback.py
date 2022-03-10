@@ -273,16 +273,12 @@ async def cb_handler(client: illuzX, query):
                 buttons=[
                 ],[
                  InlineKeyboardButton("About-me", callback_data="about") 
-                 ][
-
                  ]
             else:
                 buttons = [
                 ],[
                  InlineKeyboardButton("About", callback_data="about") 
-                 ],[
-
-                 ]              
+                 ]
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "help":
