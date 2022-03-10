@@ -1,9 +1,8 @@
 class AtwFilt(object):
 
-    DEFAULT_MSG = """👋Hello {mention}.....!!!\n my name  [{bot_name}](t.me/{bot_username}) you can Call me As Auto Filter Bot🌹\n i can Give Movies On Here  \njust ask A Movie name.....!!!🌹"""
+    DEFAULT_MSG = """👋Hello {mention}.....!!!\nIt's Power Full [{bot_name}](t.me/{bot_username}) Here 😎\nAdd Me To Your Group And Make Sure I'm an Admin There! \nAnd Enjoy My Pever Show.....!!!🤪"""
 
-    HELP_MSG = """**adich poyi Gooysh🤣
-    In Develpoment!!**"""
+    HELP_MSG = """**Help Veno Monuse 🤣**"""
 
     ABOUT_MSG = """
 🤖 My Name [{bot_name}](t.me/{bot_username})
@@ -20,7 +19,12 @@ class AtwFilt(object):
 
 🗳️ My Server :    Heroko """
 
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title Mvb {title}\n\n🔘Size {size}"""
+    FILE_CAPTIONS =
+"""Hello 👋 {mention}
+Title <code>{file_name}</code>
+Size {file_size}
+{file_caption}
+🙏 Join [MVB Channel](t.me/mvbzzer)🙏"""
 
     illuzX = """
 **ADMINS COMMANDS**
@@ -31,14 +35,9 @@ class AtwFilt(object):
  » /total - How Many Files Saved
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
- 
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
 
-    ADD_YOUR_GROUP = """** Bro Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+
+    ADD_YOUR_GROUP = """**__[{mention}] Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
