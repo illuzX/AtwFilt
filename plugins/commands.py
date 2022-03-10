@@ -17,7 +17,7 @@ async def start_message(bot, message):
             buttons = [[
              InlineKeyboardButton("⚙️update Channel⚙️", url='t.me/mvbzzer')
              ],[
-             InlineKeyboardButton("💾Group updates💾", url=('https://t.me/+pbkjHwXnqrY4ZDFl')
+             InlineKeyboardButton("💾Group updates💾", url='https://t.me/+pbkjHwXnqrY4ZDFl')
              ],[
              InlineKeyboardButton("🤖 Support", url="https://t.me/Mvbbotz")
              ]]
@@ -25,7 +25,7 @@ async def start_message(bot, message):
             buttons = [[
              InlineKeyboardButton("⚙️update Channel⚙️", url='t.me/mvbzzer')
              ],[
-             InlineKeyboardButton("💾Group updates💾", url=('https://t.me/+pbkjHwXnqrY4ZDFl')
+             InlineKeyboardButton("💾Group updates💾", url='https://t.me/+pbkjHwXnqrY4ZDFl')
              ],[
              InlineKeyboardButton("🤖 Support", url="https://t.me/Mvbbotz")
              ]]    
