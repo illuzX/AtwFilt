@@ -19,12 +19,7 @@ class AtwFilt(object):
 
 🗳️ My Server :    Heroko """
 
-    FILE_CAPTIONS =
-"""Hello 👋 {mention}
-Title <code>{file_name}</code>
-Size {file_size}
-{file_caption}
-🙏 Join [MVB Channel](t.me/mvbzzer)🙏"""
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
 
     illuzX = """
 **ADMINS COMMANDS**
