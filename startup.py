@@ -15,8 +15,7 @@ class AtwFilt(object):
 🗃️ My Database :  Mongodb
 🗳️ My Server :    Heroko """
 
-    FILE_CAPTIONS =
-"""Hello 👋 {mention}
+    FILE_CAPTIONS = """Hello 👋 {mention}
 Title <code>{file_name}</code>
 Size <b>{file_size}</b>
 {file_caption}
