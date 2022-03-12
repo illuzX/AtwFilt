@@ -15,7 +15,7 @@ My Language :Python3
 My Database :Mongodb
 My Server   :Heroko """
 
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n💿Size {size}\n\n➠Uploded[Movie Bazzer]{t.me/mvbzzer} """
+    FILE_CAPTIONSe = """Hello 👋 {mention}\n\n📁Title {title}\n\n💿Size {size}\n\n➠Uploded[Movie Bazzer]{t.me/mvbzzer} """
 
     illuzX = """
 **ADMINS COMMANDS**
