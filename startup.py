@@ -3,19 +3,27 @@ class AtwFilt(object):
     DEFAULT_MSG = """👋hy {mention}..
     my name is  [{bot_name}](t.me/{bot_username}) you can call me as a [filter botv3](t.me/{bot_username}) \n\n type /help to know \n\n how to use me!!! """
 
-    HELP_MSG = """** How To Use Me\n\n 
-    Type A Movie Name pushpa or pushpa 2022 \n\nand search Then U Get Some Filters ...\n\n Did'u find You're query Just Click The  filter bar Thats It **"""
+    HELP_MSG = """** \n\nHow To Use Me\n\n 
+    Type A Movie Name pushpa or pushpa 2022 \n\nand search Then U Get Some Filters ...\n Did'u find You're query Just Click The  filter bar Thats It **"""
 
     ABOUT_MSG = """
-my Name     :[{bot_name}](t.me/{bot_username})
-my Develpor :[illuzX](t.me/Grayhathacker767)
-My Creator  :[Move Bazzer](t.me//mvbzzer)
-My Library  :Pyrogram
-My Language :Python3
-My Database :Mongodb
-My Server   :Heroko """
+➠ my Name  :[{bot_name}](t.me/{bot_username})
 
-    FILE_CAPTIONSe = """Hello 👋 {mention}\n\n📁Title {title}\n\n💿Size {size}\n\n➠Uploded[Movie Bazzer]{t.me/mvbzzer} """
+➠ Developer :[illuzX](t.me/Grayhathacker767)
+
+➠ owner :[Move Bazzer](t.me//mvbzzer)
+
+➠  Library  :Pyrogram
+
+➠  Language :Python3
+
+➠  Database :Mongodb
+
+➠  server   :Heroko """
+#FILE : <code>{file_name}</code> 
+#❤️Size : <i>{file_size}</i>
+#✅CAPTION: {file_caption}
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {file_name}\n\n💿Size {file_size}\n\n➠Uploded[Movie Bazzer]{t.me/mvbzzer} """
 
     illuzX = """
 **ADMINS COMMANDS**
@@ -28,7 +36,7 @@ My Server   :Heroko """
  » /channel - Add Channel List"""
 
 
-    ADD_YOUR_GROUP = """**__[{mention}] Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+    ADD_YOUR_GROUP = """**__bruh, Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
