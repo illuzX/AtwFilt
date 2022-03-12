@@ -23,9 +23,7 @@ class AtwFilt(object):
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {Title <code>{file_name}</code>\n\n
-Size {file_size}
-{file_caption}"""
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
 
     illuzX = """
 **ADMINS COMMANDS**
