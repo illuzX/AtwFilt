@@ -65,7 +65,7 @@ async def cb_handler(client: illuzX, query):
                 )
                 return
 
-        elif query.data.startswith("AtwFilt"):
+        elif query.data.startswith("backgroup"):
             ident, index, keyword = query.data.split("_")
             try:
                 data = BUTTONS[keyword]
@@ -151,7 +151,7 @@ async def cb_handler(client: illuzX, query):
                 )
                 return
 
-        elif query.data.startswith("AtwFilt"):
+        elif query.data.startswith("backbot"):
             ident, index, keyword = query.data.split("_")
             try:
                 data = BUTTONS[keyword]
@@ -192,7 +192,8 @@ async def cb_handler(client: illuzX, query):
 
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-elif query.data.startswith("AtwFilt"):
+
+        elif query.data.startswith("Meow_Robort"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -222,7 +223,7 @@ elif query.data.startswith("AtwFilt"):
 
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-elif query.data.startswith("pmfile"):
+        elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
                 await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
                 return
@@ -233,18 +234,16 @@ elif query.data.startswith("pmfile"):
                 size=get_size(files.file_size)
                 
                 caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
-                
+
                 buttons = [[
-                  InlineKeyboardButton('⚙️update Channel⚙️', url='https://t.me/mvbzzer')
-                  ],[
-                  InlineKeyboardButton('💾Group updates',url='https://t.me/+pbkjHwXnqrY4ZDFl')
-                  ] ]
+                  InlineKeyboardButton('🧑‍💻 For More Movies 🧑‍💻', url='https://t.me/mvbzzer2')
+                  ]]                 
                 
                 await query.answer()
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f_caption,
+                    caption=caption,
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
 
@@ -254,15 +253,25 @@ elif query.data.startswith("pmfile"):
 
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
-                buttons=[
-                ],[
-                 InlineKeyboardButton("About-me", callback_data="about") 
-                 ]
+                buttons = [[
+                 InlineKeyboardButton("➕️ Work on Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
+                 ],[
+                 InlineKeyboardButton("ℹ️ Help", callback_data="help"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton("🎗️ Soruce-Code🎗️", url="t.me/RecallMvbadmin_Bot"),
+                 InlineKeyboardButton("π Update", url="https://t.me/mvbzzer")
+                 ]]
             else:
-                buttons = [
-                ],[
-                 InlineKeyboardButton("About", callback_data="about") 
-                 ]
+                buttons = [[
+                 InlineKeyboardButton("➕️ Work On Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
+                 ],[
+                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton("🎗️ Soruce-Code🎗️", url="t.me/RecallMvbadmin_Bot"),
+                 InlineKeyboardButton("∆ Update", url="https://t.me/mvbzzer")
+                 ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "help":
@@ -279,19 +288,21 @@ elif query.data.startswith("pmfile"):
              ]]               
             await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
+        elif query.data == "close":
+            await query.message.delete()
+
         elif query.data == "bot_owner":
             buttons = [[
              InlineKeyboardButton('🏠 Home', callback_data="start"),
              InlineKeyboardButton('About 😎', callback_data="about")
              ]]               
-            await query.message.edit(text=AtwFilt. illuzX.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt. illuzx.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "pages":
             await query.answer()
 
+        elif query.data == "close":
+            await query.message.delete()
+
     else:
         await query.answer("Please Request",show_alert=True)
-
-
-
-
