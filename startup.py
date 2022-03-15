@@ -3,8 +3,10 @@ class AtwFilt(object):
     DEFAULT_MSG = """👋hy {mention}..
     my name is[{bot_name}](t.me/{bot_username}) you can call me as a [filter botv3](t.me/{bot_username}) \n\n type /help to know \n\n how to use me!!! """
 
-    HELP_MSG = """**How To Use Me
-    Type A Movie Name (pushpa) or (pushpa 2022)\n\nand search Then U Get Some Filters ...\n Did'u find You're query Just Click The  filter bar Thats It **"""
+    HELP_MSG = """**
+   .How To Use Me.
+   .Type A Movie Name (pushpa) or (pushpa 2022).
+  .and search Then U Get Some Filters. ...\n Did'u find You're query Just Click The  filter bar Thats It **"""
 
     ABOUT_MSG = """
 ➠ my Name  :[{bot_name}](t.me/{bot_username})
