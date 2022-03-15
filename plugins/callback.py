@@ -65,7 +65,7 @@ async def cb_handler(client: illuzX, query):
                 )
                 return
 
-        elif query.data.startswith("AtwFilt"):
+        elif query.data.startswith("backgroup"):
             ident, index, keyword = query.data.split("_")
             try:
                 data = BUTTONS[keyword]
@@ -151,7 +151,7 @@ async def cb_handler(client: illuzX, query):
                 )
                 return
 
-        elif query.data.startswith("AtwFilt"):
+        elif query.data.startswith("backbot"):
             ident, index, keyword = query.data.split("_")
             try:
                 data = BUTTONS[keyword]
@@ -193,7 +193,7 @@ async def cb_handler(client: illuzX, query):
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
 
-        elif query.data.startswith("AtwFilt"):
+        elif query.data.startswith("Meow_Robort"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -201,16 +201,8 @@ async def cb_handler(client: illuzX, query):
             files = files_[0]
             title = files.file_name
             size=get_size(files.file_size)
-            f_caption=files.caption
-            if CUSTOM_FILE_CAPTION:
-                try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, file_name=title, file_size=size, file_caption=f_caption)
-                except Exception as e:
-                        print(e)
-                f_caption=f_caption
-            if f_caption is None:
-                f_caption = AtwFilt.FILE_CAPTIONS.format(mention=query.from_user.mention, title=title, size=size)
-            
+            caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
+
             try:
                 if FORCES_SUB and not await is_subscribed(client, query):
                     await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
@@ -219,7 +211,7 @@ async def cb_handler(client: illuzX, query):
                     await client.send_cached_media(
                         chat_id=query.from_user.id,
                         file_id=file_id,
-                        caption=f_caption
+                        caption=caption
                         )
                     await query.answer('🤖 Check PM, I have Sent Files In Pm 🤖',show_alert = True)
             except UserIsBlocked:
@@ -240,27 +232,18 @@ async def cb_handler(client: illuzX, query):
             for files in filedetails:
                 title = files.file_name
                 size=get_size(files.file_size)
-                f_caption=files.caption
-                if CUSTOM_FILE_CAPTION:
-                    try:
-                        f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, file_size=size, file_caption=f_caption)
-                    except Exception as e:
-                        print(e)
-                        f_caption=f_caption
-                if f_caption is None:
-                    f_caption = AtwFilt.FILE_CAPTIONS
+                
+                caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
+
                 buttons = [[
-                  
-                  InlineKeyboardButton('⚙️update Channel⚙️', url='https://t.me/mvbzzer')
-                  ],[
-                  InlineKeyboardButton('💾Group updates',url='https://t.me/+pbkjHwXnqrY4ZDFl')
-                  ] ]
+                  InlineKeyboardButton('🧑‍💻 For More Movies 🧑‍💻', url='https://t.me/mvbzzer2')
+                  ]]                 
                 
                 await query.answer()
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f_caption,
+                    caption=caption,
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
 
@@ -270,19 +253,25 @@ async def cb_handler(client: illuzX, query):
 
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
-                buttons=[
-                ],[
-                 InlineKeyboardButton("About-me", callback_data="about") 
-                 ][
-
-                 ]
-            else:
-                buttons = [
-                ],[
-                 InlineKeyboardButton("About", callback_data="about") 
+                buttons = [[
+                 InlineKeyboardButton("➕️ Work on Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
                  ],[
-
-                 ]              
+                 InlineKeyboardButton("ℹ️ Help", callback_data="help"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton("🎗️ Soruce-Code🎗️", url="t.me/RecallMvbadmin_Bot"),
+                 InlineKeyboardButton("π Update", url="https://t.me/mvbzzer")
+                 ]]
+            else:
+                buttons = [[
+                 InlineKeyboardButton("➕️ Work On Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
+                 ],[
+                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+                 InlineKeyboardButton("😎 About", callback_data="about") 
+                 ],[
+                 InlineKeyboardButton("🎗️ Soruce-Code🎗️", url="t.me/RecallMvbadmin_Bot"),
+                 InlineKeyboardButton("∆ Update", url="https://t.me/mvbzzer")
+                 ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "help":
@@ -299,6 +288,9 @@ async def cb_handler(client: illuzX, query):
              ]]               
             await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
+        elif query.data == "close":
+            await query.message.delete()
+
         elif query.data == "bot_owner":
             buttons = [[
              InlineKeyboardButton('🏠 Home', callback_data="start"),
@@ -309,9 +301,8 @@ async def cb_handler(client: illuzX, query):
         elif query.data == "pages":
             await query.answer()
 
+        elif query.data == "close":
+            await query.message.delete()
+
     else:
         await query.answer("Please Request",show_alert=True)
-
-
-
-
