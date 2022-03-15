@@ -60,8 +60,7 @@ Couldn't Find {query}?  Please Click Your Request Movie Name"""
 📆 Year : {year}
 🌟 Rating:{rating}/10
 🗨️ Genres: {genres}
-🎗️ uploded: [mvbzzer](t.me/mvbzzer)
-☀️ Languages : <b>{languages}</b>"""
+🎗️ uploded: [mvbzzer](t.me/mvbzzer)"""
 
     GET_MOVIE_2 = """
 📽️ Requested Movie : {query}
