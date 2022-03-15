@@ -192,8 +192,7 @@ async def cb_handler(client: illuzX, query):
 
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-
-        elif query.data.startswith("AtwFilt"):
+elif query.data.startswith("AtwFilt"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -201,16 +200,8 @@ async def cb_handler(client: illuzX, query):
             files = files_[0]
             title = files.file_name
             size=get_size(files.file_size)
-            f_caption=files.caption
-            if CUSTOM_FILE_CAPTION:
-                try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, file_name=title, file_size=size, file_caption=f_caption)
-                except Exception as e:
-                        print(e)
-                f_caption=f_caption
-            if f_caption is None:
-                f_caption = AtwFilt.FILE_CAPTIONS.format(mention=query.from_user.mention, title=title, size=size)
-            
+            caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
+
             try:
                 if FORCES_SUB and not await is_subscribed(client, query):
                     await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
@@ -219,7 +210,7 @@ async def cb_handler(client: illuzX, query):
                     await client.send_cached_media(
                         chat_id=query.from_user.id,
                         file_id=file_id,
-                        caption=f_caption
+                        caption=caption
                         )
                     await query.answer('🤖 Check PM, I have Sent Files In Pm 🤖',show_alert = True)
             except UserIsBlocked:
@@ -231,7 +222,7 @@ async def cb_handler(client: illuzX, query):
 
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-        elif query.data.startswith("pmfile"):
+elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
                 await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
                 return
@@ -240,15 +231,8 @@ async def cb_handler(client: illuzX, query):
             for files in filedetails:
                 title = files.file_name
                 size=get_size(files.file_size)
-                f_caption=files.caption
-                if CUSTOM_FILE_CAPTION:
-                    try:
-                        f_caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, file_size=size, file_caption=f_caption)
-                    except Exception as e:
-                        print(e)
-                        f_caption=f_caption
-                if f_caption is None:
-                    f_caption = AtwFilt.FILE_CAPTIONS
+                
+                caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
                 buttons = [[
                   
                   InlineKeyboardButton('⚙️update Channel⚙️', url='https://t.me/mvbzzer')
