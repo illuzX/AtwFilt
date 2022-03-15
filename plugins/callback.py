@@ -222,7 +222,7 @@ async def cb_handler(client: illuzX, query):
 
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-elif query.data.startswith("pmfile"):
+    elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
                 await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
                 return
