@@ -1,10 +1,10 @@
 class AtwFilt(object):
 
     DEFAULT_MSG = """👋hy {mention}..
-    my name is  [{bot_name}](t.me/{bot_username}) you can call me as a [filter botv3](t.me/{bot_username}) \n\n type /help to know \n\n how to use me!!! """
+    my name is[{bot_name}](t.me/{bot_username}) you can call me as a [filter botv3](t.me/{bot_username}) \n\n type /help to know \n\n how to use me!!! """
 
-    HELP_MSG = """** \n\nHow To Use Me\n\n 
-    Type A Movie Name pushpa or pushpa 2022 \n\nand search Then U Get Some Filters ...\n Did'u find You're query Just Click The  filter bar Thats It **"""
+    HELP_MSG = """**How To Use Me
+    Type A Movie Name (pushpa) or (pushpa 2022)\n\nand search Then U Get Some Filters ...\n Did'u find You're query Just Click The  filter bar Thats It **"""
 
     ABOUT_MSG = """
 ➠ my Name  :[{bot_name}](t.me/{bot_username})
@@ -19,11 +19,23 @@ class AtwFilt(object):
 
 ➠  Database :Mongodb
 
-➠  server   :Heroko """
+➠  server   :Heroko▒"""
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
+    FILE_CAPTIONS = """  <b>Join [Movie bazzer](https://t.me/mvbzzer/1661)</b> 
+
+<code>mvb {file_name}</code> 
+
+Size : <i>{file_size}</i>
+
+━━━━━━━━━━━━━━━━━━━━━━
+➠ ɢʀᴏᴜᴘ    ➧@Mvbzzer
+➠ ᴄʜᴀɴɴᴇʟ ➧@Mvbseries
+➠ ᴄʜᴀɴɴᴇʟ ➧@MalayalamOTTUpdatesMvb**"""
+
+
+    
 
     illuzX = """
 **ADMINS COMMANDS**
@@ -42,17 +54,15 @@ class AtwFilt(object):
 Hello 👋〘 {mention} 〙,
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
-📽️ Requested Movie : [{query}]({url})
-👤 Requested By : {mention}
 🎬 Title : [{title}]({url})
 📆 Year : {year}
-🌟 Rating {rating}/10
-🗨️ Genres {genres}
-🎗️ uploded [mvbzzer](t.me/mvbzzer)"""
-
+🌟 Rating:{rating}/10
+🗨️ Genres: {genres}
+🎗️ uploded: [mvbzzer](t.me/mvbzzer)
+☀️ Languages : <b>{languages}</b>"""
 
     GET_MOVIE_2 = """
 📽️ Requested Movie : {query}
 👤 Requested By : {mention}
-️🎗️ uploded :[MOVIE BAZZER](t.me/mvbzzer)
+Uploder :[MOVIE BAZZER](t.me/mvbzzer)
 © **{chat}**"""
