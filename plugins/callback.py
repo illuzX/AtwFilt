@@ -192,7 +192,7 @@ async def cb_handler(client: illuzX, query):
 
 # ---------- 📁 [ | 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-    elif query.data.startswith("AtwFilt"):
+elif query.data.startswith("AtwFilt"):
             ident, file_id = query.data.split("#")
             files_ = await get_file_details(file_id)
             if not files_:
@@ -222,7 +222,7 @@ async def cb_handler(client: illuzX, query):
 
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
-        elif query.data.startswith("pmfile"):
+elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
                 await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
                 return
@@ -233,8 +233,8 @@ async def cb_handler(client: illuzX, query):
                 size=get_size(files.file_size)
                 
                 caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
+                
                 buttons = [[
-                  
                   InlineKeyboardButton('⚙️update Channel⚙️', url='https://t.me/mvbzzer')
                   ],[
                   InlineKeyboardButton('💾Group updates',url='https://t.me/+pbkjHwXnqrY4ZDFl')
