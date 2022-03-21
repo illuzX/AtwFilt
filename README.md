@@ -6,10 +6,6 @@
 ##TG AUTO FILTER BOT
 
 <p align="center">
-  <img src="LuciferMoringstar_Robot/modules/logo/LuciferMoringstar-Robot-Logo.jpeg" alt="LuciferMoringstar Robot Logo">
-</p>
-
-<p align="center">
   <a href="t.me/RecallMvbadmin_Bot">A T W F I L T</a>
 </p>
 
