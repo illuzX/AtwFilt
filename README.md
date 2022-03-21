@@ -2,7 +2,8 @@
 <p align="center">
   <img src="https://media3.giphy.com/media/1mgn6xWiu5IPZnDSlk/giphy.gif?cid=ecf05e47xmfqldroni362a9wet3v89j1xmf7auvamznyfclf&rid=giphy.gif&ct=g"
 </p>
-TG AUTO FILTER BOT
+  
+##TG AUTO FILTER BOT
 
 <p align="center">
   <img src="LuciferMoringstar_Robot/modules/logo/LuciferMoringstar-Robot-Logo.jpeg" alt="LuciferMoringstar Robot Logo">
@@ -14,7 +15,7 @@ TG AUTO FILTER BOT
 
 
 
-###  𝗗𝗲𝗽𝗹𝗼𝘆 
+ 
 
 ### 🔘 <a𝗔𝗱𝗱𝗲𝗱 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀</a> 🔘
 
@@ -30,6 +31,8 @@ TG AUTO FILTER BOT
 - [x] Welcome
 - [x] Status
 - [x] Custom Caption
+
+###  𝗗𝗲𝗽𝗹𝗼𝘆
 
 <a href="https://heroku.com/deploy?template=https://github.com/illuzX/AtwFilt.git"><img src="https://jeffdevslife.com/p/deploy-node-application-to-heroku/cover_hua33af6a1fb06ac2354af4ce783ce023c_35780_1024x0_resize_q75_box.jpg"  border="0" height="125" width="200" align="center" /></a>
 
