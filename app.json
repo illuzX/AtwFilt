@@ -1,7 +1,7 @@
 {
-    "name": "AtwFilt",
+    "name": "LuciferMoringstar_Robot",
     "description": "Super Fast Telegram Auto Filter Bot",
-    "logo": "https://telegra.ph/file/576ab90ae7b65a3e389e2.png",
+    "logo": "https://telegra.ph/file/aabbe1b1f267be91206c5.jpg",
     "stack": "container",
     "keywords": [
       "best",
@@ -10,27 +10,27 @@
       "filter",
       "bot"
     ],
-    "website": "https:t.me/meow_pm_Bot",
+    "website": "https://youtube.com/c/MoTech_YT",
     "repository": "https://github.com/illuzX/AtwFilt",
     "env": {
         "BOT_TOKEN": {
-            "description": "Your Bot Token From, Bot Father ",
+            "description": "Your Bot Token From https://youtu.be/cB4UduCcNWs",
             "value": ""
         },
         "API_ID": {
-            "description": "Get this value from @telegramOrg_Bot",
+            "description": "Get this value from https://youtu.be/5eEsvLAKVc0 or @MytelegramOrg_Bot",
             "value": ""
         },
         "API_HASH": {
-            "description": "Get this value from telegramOrg_Bot",
+            "description": "Get this value from https://youtu.be/5eEsvLAKVc0 or @MytelegramOrg_Bot",
             "value": ""
         },
         "CHANNELS": {
-            "description": "Username or ID of channel or group. Separate multiple IDs by space.12345678 87654321 ",
+            "description": "Username or ID of channel or group. Separate multiple IDs by space. @ID_Bot",
             "value": ""
         },
         "ADMINS": {
-            "description": "Username or ID of Admin. Separate multiple Admins by space.", 
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "value": ""
         },
         "AUTH_USERS": {
@@ -59,7 +59,7 @@
             "required": false
         },
         "DATABASE_URI": {
-            "www.MangoDb.com",
+            "description": "Mongodb from https://youtu.be/gBLTsH-IXr0",
             "value": ""
         },
         "SPELL_MODE": {
@@ -68,7 +68,7 @@
             "required": true
         },
         "SPELL_MODE_TEXT": {
-            "description": "Seplling Mode ON Or OFF",
+            "description": "Seplling Mode",
             "value": "",
             "required": true
         },
@@ -78,12 +78,12 @@
         },
         "DEV_NAME": {
             "description": "Creator Name or Username ",
-            "value": "This person",
+            "value": "type youre name",
             "required": true
         },
         "SUPPORT": {
             "description": "Your Group Link Private or Public Link (with t.me or https://t.me)",
-            "value": "https://telegram.dog/Add_me_in_group",
+            "value": "https://telegram.dog/my_TG_Bot2",
             "required": true
         }
     },
