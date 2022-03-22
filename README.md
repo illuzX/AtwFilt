@@ -1,6 +1,6 @@
 # AtwFilt
 <p align="center">
-  <img src="https://media3.giphy.com/media/1mgn6xWiu5IPZnDSlk/giphy.gif?cid=ecf05e47xmfqldroni362a9wet3v89j1xmf7auvamznyfclf&rid=giphy.gif&ct=g"
+  <img src="https://telegra.ph/file/576ab90ae7b65a3e389e2.png"
 </p>
   
 ##TG PM / GROUP AUTO FILTER BOT
