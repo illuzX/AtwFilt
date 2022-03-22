@@ -30,7 +30,7 @@
 
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
 
-<a href="https://heroku.com/deploy?template=https://github.com/illuzX/AtwFilt.git"><img src="https://jeffdevslife.com/p/deploy-node-application-to-heroku/cover_hua33af6a1fb06ac2354af4ce783ce023c_35780_1024x0_resize_q75_box.jpg"  border="1" height="100" width="100" align="center" /></a>
+<a href="https://heroku.com/deploy?template=https://github.com/illuzX/AtwFilt.git"><img src="https://jeffdevslife.com/p/deploy-node-application-to-heroku/cover_hua33af6a1fb06ac2354af4ce783ce023c_35780_1024x0_resize_q75_box.jpg"  border="1" height="125" width="200" align="center" /></a>
 
 
 ### 📍 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱
