@@ -32,7 +32,7 @@
 
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
 
-<a href="https://heroku.com/deploy?template=https://github.com/illuzX/AtwFilt"><img src="https://jeffdevslife.com/p/deploy-node-application-to-heroku/cover_hua33af6a1fb06ac2354af4ce783ce023c_35780_1024x0_resize_q75_box.jpg"  border="1" height="125" width="200" align="center" /></a>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/illuzX/AtwFilt)
 
 
 ### 📍 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱
