@@ -3,10 +3,11 @@
   <img src="https://media3.giphy.com/media/1mgn6xWiu5IPZnDSlk/giphy.gif?cid=ecf05e47xmfqldroni362a9wet3v89j1xmf7auvamznyfclf&rid=giphy.gif&ct=g"
 </p>
   
-##TG AUTO FILTER BOT
+##TG PM / GROUP AUTO FILTER BOT
 
 <p align="center">
-  <a href="t.me/RecallMvbadmin_Bot">A T W F I L T</a>
+  <a href="https//:t.me/RecallMvbadmin_Bot">ᴬ
+🅐 🅣 🅦 🅕 🅘 🅛 🆁🅾🅱🅾🆁🆃🤖 </a>
 </p>
 
 
