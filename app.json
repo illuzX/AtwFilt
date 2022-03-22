@@ -11,7 +11,7 @@
       "bot"
     ],
     "website": "https:t.me/meow_pm_Bot",
-    "repository": "https://github.com/illuzX/AtwFilt.git",
+    "repository": "https://github.com/illuzX/AtwFilt",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot Token From, Bot Father ",
