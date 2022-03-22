@@ -6,7 +6,7 @@
 ##TG PM / GROUP AUTO FILTER BOT
 
 <p align="center">
-  <a href="https//:t.me/RecallMvbadmin_Bot">ᴬ
+  <a href="https//:t.me/RecallMvbadmin_Bot">
 🅐 🅣 🅦 🅕 🅘 🅛 🆁🅾🅱🅾🆁🆃🤖 </a>
 </p>
 
