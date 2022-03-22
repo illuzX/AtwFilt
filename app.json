@@ -1,0 +1,102 @@
+{
+    "name": "AtwFilt",
+    "description": "Super Fast Telegram Auto Filter Bot",
+    "logo": "https://telegra.ph/file/576ab90ae7b65a3e389e2.png",
+    "stack": "container",
+    "keywords": [
+      "best",
+      "telegarm",
+      "auto",
+      "filter",
+      "bot"
+    ],
+    "website": "https:t.me/meow_pm_Bot",
+    "repository": "https://github.com/illuzX/AtwFilt.git",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From, Bot Father ",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from @telegramOrg_Bot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from telegramOrg_Bot",
+            "value": ""
+        },
+        "CHANNELS": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.12345678 87654321 ",
+            "value": ""
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.", 
+            "value": ""
+        },
+        "AUTH_USERS": {
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "value": "",
+            "required": false
+        },
+        "FORCES_SUB": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value": "",
+            "required": false
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "value": "",
+            "required": false
+        },
+        "START_MSG": {
+            "description": "Welcome message for start command More Information Check Readme.md",
+            "value": "",
+            "required": false
+        },
+        "AUTH_GROUPS": {
+            "description": "ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.",
+            "value": "",
+            "required": false
+        },
+        "DATABASE_URI": {
+            "www.MangoDb.com",
+            "value": ""
+        },
+        "SPELL_MODE": {
+            "description": "Spelling Mode on or off",
+            "value": "on",
+            "required": true
+        },
+        "SPELL_MODE_TEXT": {
+            "description": "Seplling Mode ON Or OFF",
+            "value": "",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Log Channel Use Private Channel Id -100××××",
+            "value": ""
+        },
+        "DEV_NAME": {
+            "description": "Creator Name or Username ",
+            "value": "This person",
+            "required": true
+        },
+        "SUPPORT": {
+            "description": "Your Group Link Private or Public Link (with t.me or https://t.me)",
+            "value": "https://telegram.dog/Add_me_in_group",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
