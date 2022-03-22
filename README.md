@@ -15,7 +15,7 @@
  
 
 ### 🔘 <a𝗔𝗱𝗱𝗲𝗱 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀</a> 🔘
-
+- [x] PM Filter 
 - [x] IMDB Poster
 - [x] IMDB Rating
 - [x] Index Files
@@ -28,6 +28,7 @@
 - [x] Welcome
 - [x] Status
 - [x] Custom Caption
+- [ ] Link Generator
 
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
 
@@ -53,10 +54,10 @@
 * `SPELL_MODE` : Seplling Mode On Or Off
 * `SPELL_MODE_TEXT` : Set Coutom Spelling 
 * `CACHE_TIME`: The maximum amount of time in seconds that the result of the inline query may be cached on the server
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/gBLTsH-IXr0)
+* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
 * `COLLECTION_NAME`: Name of the collections. Defaults to Telegram_files. If you going to use same database, then use different collection name for each bot
 * `USE_CAPTION_FILTER`: Whether bot should use captions to improve search results. (True/False)
 
-##FORK THIS AND START YOURE CUSTOM REPO CREATION
+### `FORK THIS AND START YOURE CUSTOM REPO CREATION`
 
 
