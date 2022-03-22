@@ -41,6 +41,6 @@
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 ## 🌺spacial Thanks
-- [Mo Tech Yt](https://github.com/PR0FESS0R-99)
-- 
-### ***This Is A Open Soruce Project ©IlluzX***
+- [Muhammed](https://github.com/PR0FESS0R-99)
+
+### This Is A Open Soruce Project ©IlluzX
