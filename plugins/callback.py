@@ -253,12 +253,12 @@ async def cb_handler(client: illuzX, query):
 
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
-                buttons = [[
-                  InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
-                ],[
-                  InlineKeyboardButton("Help", callback_data="help"),
-                  InlineKeyboardButton("About", callback_data="about") 
-               ],[
+            buttons = [[
+             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
+             ],[
+             InlineKeyboardButton("Help", callback_data="help"),
+             InlineKeyboardButton("About", callback_data="about") 
+             ],[
              InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
              InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
              ]]
