@@ -15,20 +15,24 @@ async def start_message(bot, message):
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
             buttons = [[
-             InlineKeyboardButton("⚙️update Channel⚙️", url='t.me/mvbzzer')
+             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
              ],[
-             InlineKeyboardButton("💾Group updates💾", url='https://t.me/+pbkjHwXnqrY4ZDFl')
+             InlineKeyboardButton("Help", callback_data="help"),
+             InlineKeyboardButton("About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🤖 Support", url="https://t.me/Mvbbotz")
+             InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
+             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
              ]]
         else:
             buttons = [[
-             InlineKeyboardButton("⚙️update Channel⚙️", url='t.me/mvbzzer')
+             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
              ],[
-             InlineKeyboardButton("💾Group updates💾", url='https://t.me/+pbkjHwXnqrY4ZDFl')
+             InlineKeyboardButton("Help", callback_data="help"),
+             InlineKeyboardButton("About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🤖 Support", url="https://t.me/Mvbbotz")
-             ]]    
+             InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
+             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
+             ]]
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
