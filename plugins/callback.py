@@ -278,7 +278,7 @@ async def cb_handler(client: illuzX, query):
         elif query.data == "help":
             buttons = [[
               InlineKeyboardButton("🏠 Home", callback_data="start"),
-              InlineKeyboardButton("About 😎", callback_data="about")
+              InlineKeyboardButton("About ", callback_data="about")
               ]]               
             await query.message.edit(text=AtwFilt.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -295,7 +295,7 @@ async def cb_handler(client: illuzX, query):
         elif query.data == "bot_owner":
             buttons = [[
              InlineKeyboardButton('🏠 Home', callback_data="start"),
-             InlineKeyboardButton('About 😎', callback_data="about")
+             InlineKeyboardButton('About ', callback_data="about")
              ]]               
             await query.message.edit(text=AtwFilt. illuzX.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
