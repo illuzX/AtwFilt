@@ -253,25 +253,26 @@ async def cb_handler(client: illuzX, query):
 
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
-                buttons = [[
-                 InlineKeyboardButton("➕️ Work on Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
-                 ],[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton("🎗️ Soruce-Code🎗️", url="t.me/RecallMvbadmin_Bot"),
-                 InlineKeyboardButton("π Update", url="https://t.me/mvbzzer")
-                 ]]
             else:
                 buttons = [[
-                 InlineKeyboardButton("➕️ Work On Your Chat ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
-                 ],[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton("🎗️ Soruce-Code🎗️", url="t.me/RecallMvbadmin_Bot"),
-                 InlineKeyboardButton("∆ Update", url="https://t.me/mvbzzer")
-                 ]]               
+             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
+             ],[
+             InlineKeyboardButton("Help", callback_data="help"),
+             InlineKeyboardButton("About", callback_data="about") 
+             ],[
+             InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
+             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
+             ]]
+        else:
+            buttons = [[
+             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
+             ],[
+             InlineKeyboardButton("Help", callback_data="help"),
+             InlineKeyboardButton("About", callback_data="about") 
+             ],[
+             InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
+             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
+             ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "help":
