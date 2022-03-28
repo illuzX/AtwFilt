@@ -21,13 +21,13 @@ Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With
 
 ➠ Wᵂᵒʳᵏⁱⁿᵍ ᶠᵒʳ:[Move Bazzer](t.me//mvbzzer)
 
-➠ ᴸⁱᵇʳᵃʳʸ:[Pyrogram]{github.com/pyrogram/pyrogram}
+➠ ᴸⁱᵇʳᵃʳʸ:Pyrogram
 
-➠ ᴸᵃⁿᵍᵘᵃᵍᵉ [Python3]{python.org/download/releases/3.0/}
+➠ ᴸᵃⁿᵍᵘᵃᵍᵉ:Python3
 
-➠ ᴰᴬᵀᴬᴮᴬˢᴱ:[Mongodb]{mongodb.com/}
+➠ ᴰᴬᵀᴬᴮᴬˢᴱ:Mongodb
 
-➠ ˢᵉʳᵛᵉʳ:(Heroko){heroku.com/}
+➠ ˢᵉʳᵛᵉʳ:Heroko
 
 ➠ ᴮᵘⁱˡᵈ ˢᵗᵃᵗᵘˢ:(1.0-Beta){42d151f309bcfc8fe667a9379a7609633705c4e0} """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
