@@ -1,7 +1,7 @@
 # AtwFilt
-<p align="center">
-  <img src="https://telegra.ph/file/576ab90ae7b65a3e389e2.png"
-</p>
+
+  
+
   
 ##TG PM / GROUP AUTO FILTER BOT
 
