@@ -31,7 +31,7 @@ async def start_message(bot, message):
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
-    elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
+    elif len(message.command) ==2 and message.command[1] in ["Join"]:
         FORCES=["https://telegra.ph/file/10e57b92fde7aa7b540cf.jpg"]
         invite_link = await bot.create_chat_invite_link(int(FORCES_SUB))
         button=[[
@@ -59,7 +59,7 @@ async def help(bot, message):
 @illuzX.on_message(Worker.private & Worker.command(["about"]))
 async def about(bot, message):
     button = [[
-     InlineKeyboardButton("🏠 Home", callback_data="str"),
+     InlineKeyboardButton("🏠 Home", callback_data="start"),
      InlineKeyboardButton("Close 🗑️", callback_data="close")
      ]]  
     await message.reply_photo(
