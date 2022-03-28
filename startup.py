@@ -1,21 +1,15 @@
 class AtwFilt(object):
 
     DEFAULT_MSG = """👋hy {mention}..
-    my name is[{bot_name}](t.me/{bot_username}) you can call me as a [filter botv3](t.me/{bot_username}) \n\n use  /help to know how to use me!!! """
+    my name is[{bot_name}](t.me/{bot_username}) you can call me as a [Media Search Bot Beta](t.me/{bot_username})"""
 
     HELP_MSG = """**
-**How to use **
-
-Use Only English **Type** Movie name
-must need movie name!!!
-Don'T play with like spaming floiding...
-Example **Bro Daddy ** or **Bro daddy 2022**
-"""
+***No Nothing Here Sorry*** ...."""
     SOURCE_CODE = """
-***Source_code***
-https://github.com/illuzX/AtwFilt
-***Dev***
-illuzX](t.me/Grayhathacker767)"""
+**Source_code**
+[Source Code](https://github.com/illuzX/AtwFilt)
+**Dev**
+[illuzX](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
 ➠ my Name  :[{bot_name}](t.me/{bot_username})
