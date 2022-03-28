@@ -3,7 +3,9 @@ class AtwFilt(object):
     DEFAULT_MSG = """👋hy {mention}..
     
 Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
-Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With Proper #Google Spelling..!!
+Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username}) 
+
+With Proper #Google Spelling..!!
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
@@ -15,21 +17,21 @@ Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
-➠ ᴹʸ ᴺᵃᵐᵉ:[{bot_name}](t.me/{bot_username})
+➠ 𝐌𝐘 𝐍𝐀𝐌𝐄:[{bot_name}](t.me/{bot_username})
 
-➠  ᴰᵉᵛᵉˡᵒᵖᵉʳ:[illuzX](t.me/Grayhathacker767)
+➠ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫:[𝐈𝐥𝐥𝐮𝐳𝐗🎩](t.me/Grayhathacker767)
 
-➠ Wᵂᵒʳᵏⁱⁿᵍ ᶠᵒʳ:[Move Bazzer](t.me//mvbzzer)
+➠ 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐨𝐫📍:[Move Bazzer](t.me//mvbzzer)
 
-➠ ᴸⁱᵇʳᵃʳʸ:Pyrogram
+➠ 𝐥𝐢𝐛𝐫𝐚𝐫𝐲🎗:𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦
 
-➠ ᴸᵃⁿᵍᵘᵃᵍᵉ:Python3
+➠ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞📚:𝐏𝐲𝐭𝐡𝐨𝐧𝟑
 
-➠ ᴰᴬᵀᴬᴮᴬˢᴱ:Mongodb
+➠ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞🗂️:𝐌𝐨𝐧𝐠𝐨𝐝𝐛
 
-➠ ˢᵉʳᵛᵉʳ:Heroko
+➠ 𝐒𝐞𝐫𝐯𝐞𝐫💻:𝐇𝐞𝐫𝐨𝐤𝐮
 
-➠ ᴮᵘⁱˡᵈ ˢᵗᵃᵗᵘˢ:1.0-Beta """
+➠ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬🛠:1.0-Beta """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
 
 
