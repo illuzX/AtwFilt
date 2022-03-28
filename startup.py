@@ -21,7 +21,7 @@ With Proper #Google Spelling..!!
 
 ➠ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫:[𝐈𝐥𝐥𝐮𝐳𝐗🎩](t.me/Grayhathacker767)
 
-➠ 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐨𝐫📍:[Move Bazzer](t.me//mvbzzer)
+➠ 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐨𝐫:[𝐌𝐨𝐯𝐢𝐞 𝐛𝐚𝐳𝐳𝐞𝐫📜](t.me//mvbzzer)
 
 ➠ 𝐥𝐢𝐛𝐫𝐚𝐫𝐲🎗:𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦
 
@@ -31,7 +31,7 @@ With Proper #Google Spelling..!!
 
 ➠ 𝐒𝐞𝐫𝐯𝐞𝐫💻:𝐇𝐞𝐫𝐨𝐤𝐮
 
-➠ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬🛠:1.0-Beta """
+➠ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬🛠:𝟏.𝟎.𝟏-ᵇᵉᵗᵃ"""
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
 
 
@@ -39,16 +39,12 @@ With Proper #Google Spelling..!!
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
     FILE_CAPTIONS = """  <b>Join [Movie bazzer](https://t.me/mvbzzer/1661)</b> 
-
 <code>mvb {title}</code> 
-
 Size : <i>{size}</i>
-
 ━━━━━━━━━━━━━━━━━━━━━━
 ➠ ɢʀᴏᴜᴘ    ➧@Mvbzzer
 ➠ ᴄʜᴀɴɴᴇʟ ➧@Mvbseries
 ➠ ᴄʜᴀɴɴᴇʟ ➧@MalayalamOTTUpdatesMvb**"""
-
 
     
 

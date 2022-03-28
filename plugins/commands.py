@@ -35,7 +35,7 @@ async def start_message(bot, message):
         FORCES=["https://telegra.ph/file/10e57b92fde7aa7b540cf.jpg"]
         invite_link = await bot.create_chat_invite_link(int(FORCES_SUB))
         button=[[
-         InlineKeyboardButton("Join To Use Me", url=invite_link.invite_link)
+         InlineKeyboardButton("🦋Join To Use Me", url=invite_link.invite_link)
          ]]
         reply_markup = InlineKeyboardMarkup(button)
         await message.reply_photo(
