@@ -8,30 +8,30 @@ from plugins.database.broadcast_db import Database
 db = Database()
 
 
-@illuzX.on_message(Worker.private & Worker.command(["start", "str"]))
+@illuzX.on_message(Worker.private & Worker.command(["start", start]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
             buttons = [[
-             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat='')
+             InlineKeyboardButton("🔍𝐒𝐄𝐀𝐑𝐂𝐇🔎", switch_inline_query_current_chat='')
             ] ,[
-             InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb")
+             InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb")
             ] ,[
-             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽", url="https://t.me/my_TG_Bot2")
+             InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/my_TG_Bot2")
              ]]
         else:
             buttons = [[
-             InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat='')
+             InlineKeyboardButton("🔍𝐒𝐄𝐀𝐑𝐂𝐇🔎", switch_inline_query_current_chat='')
           ] ,[
-             InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb")
+             InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb")
           ], [
-             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽", url="https://t.me/my_TG_Bot2")
+             InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/my_TG_Bot2")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
-    elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
+    elif len(message.command) ==2 and message.command[1] in ["Join"]:
         FORCES=["https://telegra.ph/file/10e57b92fde7aa7b540cf.jpg"]
         invite_link = await bot.create_chat_invite_link(int(FORCES_SUB))
         button=[[
@@ -59,8 +59,9 @@ async def help(bot, message):
 @illuzX.on_message(Worker.private & Worker.command(["about"]))
 async def about(bot, message):
     button = [[
-     InlineKeyboardButton("🏠 Home", callback_data="str"),
+     InlineKeyboardButton("🏠 Home", callback_data="start"),
      InlineKeyboardButton("Close 🗑️", callback_data="close")
+     InlineKeyboardButton("🎩source Code🔗",    callback_data="SOURCE_CODE"
      ]]  
     await message.reply_photo(
         photo = choice(BOT_PICS),
