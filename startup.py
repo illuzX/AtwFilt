@@ -11,6 +11,12 @@ must need movie name!!!
 Don'T play with like spaming floiding...
 Example **Bro Daddy ** or **Bro daddy 2022**
 """
+    SOURCE_CODE = """
+***Source_code***
+https://github.com/illuzX/AtwFilt
+***Dev***
+illuzX](t.me/Grayhathacker767)"""
+
     ABOUT_MSG = """
 ➠ my Name  :[{bot_name}](t.me/{bot_username})
 
