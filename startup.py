@@ -3,7 +3,7 @@ class AtwFilt(object):
     DEFAULT_MSG = """👋hy {mention}..
     
 Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
-Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With Proper [Google]{https://google.com} Spelling..!!
+Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With Proper #Google Spelling..!!
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
