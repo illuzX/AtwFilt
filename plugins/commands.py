@@ -8,7 +8,7 @@ from plugins.database.broadcast_db import Database
 db = Database()
 
 
-@illuzX.on_message(Worker.private & Worker.command(["start", start]))
+@illuzX.on_message(Worker.private & Worker.command(["start"]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
