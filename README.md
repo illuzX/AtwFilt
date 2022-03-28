@@ -29,7 +29,8 @@
 - [x] Status
 - [x] Custom Caption
 - [ ] Link Generator
-- [×] Force Sub 
+- [x] Force Subscribe 
+
 
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
 
@@ -41,7 +42,6 @@
 - [Orginal Repo](https://github.com/Mahesh0253/Media-Search-bot)
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-## 🌺spacial Thanks
+## 🌺Thanks For his awsome Modification
 - [Muhammed](https://github.com/PR0FESS0R-99)
 
-### This Is A Open Soruce Project ©IlluzX
