@@ -10,9 +10,9 @@ Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With
 ***Im In Develepment Stage*** ...."""
     SOURCE_CODE = """
 **REPO**
-[Source Code](https://github.com/illuzX/AtwFilt)
-**Dev**
-[illuzX](t.me/Grayhathacker767)"""
+[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt)
+**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
+[𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
 ➠ ᴹʸ ᴺᵃᵐᵉ:[{bot_name}](t.me/{bot_username})
