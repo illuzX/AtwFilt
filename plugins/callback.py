@@ -225,6 +225,8 @@ async def cb_handler(client: illuzX, query):
 
         elif query.data.startswith("pmfile"):
             if FORCES_SUB and not await is_subscribed(client, query):
+                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
+            except PeerIdInvalid:
                 await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
@@ -270,6 +272,7 @@ async def cb_handler(client: illuzX, query):
                  InlineKeyboardButton("😎 About", callback_data="about") 
                  ],[
                  InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
+                 ],[
                  InInlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/my_TG_Bot2")
                  ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -299,7 +302,7 @@ async def cb_handler(client: illuzX, query):
             await query.message.edit(text=AtwFilt. illuzX.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
         elif query.data == "SOURCE_CODE":
             buttons = [[
-             InlineKeyboardButton('BACK', callback_data="str"),
+             InlineKeyboardButton('BACK', callback_data="start"),
              InlineKeyboardButton('About 😎', callback_data="about")
              ]]
             await query.message.edit(text=AtwFilt.SOURCE_CODE.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
