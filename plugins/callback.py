@@ -276,14 +276,14 @@ async def cb_handler(client: illuzX, query):
 
         elif query.data == "help":
             buttons = [[
-              InlineKeyboardButton("🏠 Home", callback_data="start"),
+              InlineKeyboardButton("source code ", callback_data="SOURCE_CODE"),
               InlineKeyboardButton("About 😎", callback_data="about")
               ]]               
             await query.message.edit(text=AtwFilt.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [[
-             InlineKeyboardButton("🏠 Home", callback_data="start"),
+             InlineKeyboardButton("Back", callback_data="str"),
              InlineKeyboardButton("Close 🗑️", callback_data="close")
              ]]               
             await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -293,10 +293,16 @@ async def cb_handler(client: illuzX, query):
 
         elif query.data == "bot_owner":
             buttons = [[
-             InlineKeyboardButton('🏠 Home', callback_data="start"),
+             InlineKeyboardButton('source code', callback_data="SOURCE_CODE"),
              InlineKeyboardButton('About 😎', callback_data="about")
              ]]               
             await query.message.edit(text=AtwFilt. illuzX.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+        elif query.data == "SOURCE_CODE":
+            buttons = [[
+             InlineKeyboardButton('BACK', callback_data="str"),
+             InlineKeyboardButton('About 😎', callback_data="about")
+             ]]
+            await query.message.edit(text=AtwFilt.SOURCE_CODE.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "pages":
             await query.answer()
