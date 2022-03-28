@@ -1,30 +1,38 @@
 class AtwFilt(object):
 
     DEFAULT_MSG = """👋hy {mention}..
-    my name is[{bot_name}](t.me/{bot_username}) you can call me as a [Media Search Bot Beta](t.me/{bot_username})"""
+    
+Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
+Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With Proper [Google]{https://google.com} Spelling..!!
+𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-***No Nothing Here Sorry*** ...."""
+***Im In Develepment Stage*** ...."""
     SOURCE_CODE = """
-**Source_code**
+**REPO**
 [Source Code](https://github.com/illuzX/AtwFilt)
 **Dev**
 [illuzX](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
-➠ my Name  :[{bot_name}](t.me/{bot_username})
+➠ ᴹʸ ᴺᵃᵐᵉ:[{bot_name}](t.me/{bot_username})
 
-➠ Developer :[illuzX](t.me/Grayhathacker767)
+➠  ᴰᵉᵛᵉˡᵒᵖᵉʳ:[illuzX](t.me/Grayhathacker767)
 
-➠ owner :[Move Bazzer](t.me//mvbzzer)
+➠ Wᵂᵒʳᵏⁱⁿᵍ ᶠᵒʳ:[Move Bazzer](t.me//mvbzzer)
 
-➠  Library  :Pyrogram
+➠ ᴸⁱᵇʳᵃʳʸ:[Pyrogram]{https://github.com/pyrogram/pyrogram}
 
-➠  Language :Python3
+➠ ᴸᵃⁿᵍᵘᵃᵍᵉ [Python3]{https://www.python.org/download/releases/3.0/}
 
-➠  Database :Mongodb
+➠ ᴰᴬᵀᴬᴮᴬˢᴱ:[Mongodb]{https://www.mongodb.com/}
 
-➠  server   :Heroko▒"""
+➠ ˢᵉʳᵛᵉʳ:(Heroko){https://heroku.com/}
+
+➠ ᴮᵘⁱˡᵈ ˢᵗᵃᵗᵘˢ:(1.0-Beta){42d151f309bcfc8fe667a9379a7609633705c4e0} """
+#https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
+
+
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
@@ -53,7 +61,8 @@ Size : <i>{size}</i>
  » /channel - Add Channel List"""
 
 
-    ADD_YOUR_GROUP = """**__bruh, Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+    ADD_YOUR_GROUP = """**__bruh, Its That The Correct Spel Of That Movie ??? 
+Pls \n Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
