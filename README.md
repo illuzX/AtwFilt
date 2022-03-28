@@ -1,14 +1,12 @@
-# AtwFilt 1.0 beta 
-<p align="center">
-  <img src="https://telegra.ph/file/576ab90ae7b65a3e389e2.png"
-</p>
+# AtwFilt 1.0.1 beta  
   
 ##TG PM / GROUP AUTO FILTER BOT
 
 <p align="center">
-  <a href="https//:t.me/RecallMvbadmin_Bot">
+  <a href="https//:t.me//RecallMvbadmin_Bot">
 🅐 🅣 🅦 🅕 🅘 🅛 🆁🅾🅱🅾🆁🆃🤖 </a>
 </p>
+
 
 
 
@@ -28,8 +26,9 @@
 - [x] Welcome
 - [x] Status
 - [x] Custom Caption
+- [x] Force Subscribe
+- [x] Group Atw Filter 
 - [ ] Link Generator
-- [x] Force Subscribe 
 
 
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
