@@ -17,22 +17,22 @@ async def start_message(bot, message):
             buttons = [[
              InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
              ],[
-             InlineKeyboardButton("Help", callback_data="help"),
-             InlineKeyboardButton("About", callback_data="about") 
+             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
+             InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
              InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
-             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
+             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽", url="https://t.me/my_TG_Bot2")
              ]]
         else:
             buttons = [[
              InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat=query)
              ],[
-             InlineKeyboardButton("Help", callback_data="help"),
-             InlineKeyboardButton("About", callback_data="about") 
+             InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
+             InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
              InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
-             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽️", url="https://t.me/my_TG_Bot2")
-             ]]
+             InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽", url="https://t.me/my_TG_Bot2")
+             ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif len(message.command) ==2 and message.command[1] in ["subscribe"]:
@@ -49,7 +49,7 @@ async def start_message(bot, message):
         )
         return
    
-@illuzX.on_message(Worker.private & Worker.command(["help"]))
+@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["help"]))
 async def help(bot, message):
     button = [[
      InlineKeyboardButton("🏠 Home", callback_data="start"),
