@@ -256,10 +256,8 @@ async def cb_handler(client: illuzX, query):
                 buttons = [[
                  InlineKeyboardButton("🔍𝐒𝐄𝐀𝐑𝐂𝐇🔎" ,switch_inline_query_current_chat='')
                  ],[
-                 InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
                  InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
+                 ],[
                  InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/my_TG_Bot2")
                  ]]
             else:
