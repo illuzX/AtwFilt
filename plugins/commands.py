@@ -1,14 +1,14 @@
 from random import choice
 from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME
 from pyrogram import Client as illuzX, filters as Worker
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup,  InlineKeyboardButton, CallbackQuery
 from startup import AtwFilt
 from plugins.database.broadcast_db import Database
 
 db = Database()
 
 
-@illuzX.on_message(Worker.private & Worker.command(["start"]))
+@illuzX.on_message(Worker.private & Worker.command(["start", "str"]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
@@ -16,20 +16,14 @@ async def start_message(bot, message):
         if message.from_user.id not in ADMINS: 
             buttons = [[
              InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat='')
-             ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-             InlineKeyboardButton("😎 About", callback_data="about") 
-             ],[
+            ] ,[
              InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
              InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽", url="https://t.me/my_TG_Bot2")
              ]]
         else:
             buttons = [[
              InlineKeyboardButton("sᴇᴀʀᴄʜ ᴀɢᴀɪɴ", switch_inline_query_current_chat='')
-             ],[
-             InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-             InlineKeyboardButton("😎 About", callback_data="about") 
-             ],[
+          ] ,[
              InlineKeyboardButton("⚙️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ⚙️", url="https://t.me/MalayalamOTTUpdatesMvb"),
              InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs📽", url="https://t.me/my_TG_Bot2")
              ]]    
@@ -52,7 +46,7 @@ async def start_message(bot, message):
 @illuzX.on_message(Worker.private & Worker.command(["help"]))
 async def help(bot, message):
     button = [[
-     InlineKeyboardButton("🏠 Home", callback_data="start"),
+     InlineKeyboardButton("🏠 Home", callback_data="str"),
      InlineKeyboardButton("About 😎", callback_data="about")
      ]]
     await message.reply_photo(
@@ -63,7 +57,7 @@ async def help(bot, message):
 @illuzX.on_message(Worker.private & Worker.command(["about"]))
 async def about(bot, message):
     button = [[
-     InlineKeyboardButton("🏠 Home", callback_data="start"),
+     InlineKeyboardButton("🏠 Home", callback_data="str"),
      InlineKeyboardButton("Close 🗑️", callback_data="close")
      ]]  
     await message.reply_photo(
