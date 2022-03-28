@@ -1,4 +1,4 @@
-pyrogram
+git@github.com:illuzX/assistant.git
 pyromod
 requests
 parse-torrent-name
