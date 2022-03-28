@@ -1,4 +1,4 @@
-# AtwFilt
+# AtwFilt 1.0 beta 
 <p align="center">
   <img src="https://telegra.ph/file/576ab90ae7b65a3e389e2.png"
 </p>
@@ -29,6 +29,7 @@
 - [x] Status
 - [x] Custom Caption
 - [ ] Link Generator
+- [×] Force Sub 
 
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
 
