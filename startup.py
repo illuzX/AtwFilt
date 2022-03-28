@@ -29,7 +29,7 @@ Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username})   With
 
 ➠ ˢᵉʳᵛᵉʳ:Heroko
 
-➠ ᴮᵘⁱˡᵈ ˢᵗᵃᵗᵘˢ:(1.0-Beta){42d151f309bcfc8fe667a9379a7609633705c4e0} """
+➠ ᴮᵘⁱˡᵈ ˢᵗᵃᵗᵘˢ:1.0-Beta """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
 
 
