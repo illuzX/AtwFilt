@@ -1,36 +1,40 @@
 class AtwFilt(object):
 
     DEFAULT_MSG = """👋hy {mention}..
-    my name is[{bot_name}](t.me/{bot_username}) you can call me as a [filter botv3](t.me/{bot_username}) \n\n use  /help to know how to use me!!! """
+    
+Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
+Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username}) 
+
+With Proper #Google Spelling..!!
+𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-**How to use **
-
-Use Only English **Type** Movie name
-must need movie name!!!
-Don'T play with like spaming floiding...
-Example **Bro Daddy ** or **Bro daddy 2022**
-"""
+***Im In Develepment Stage*** ...."""
     SOURCE_CODE = """
-***Source_code***
-https://github.com/illuzX/AtwFilt
-***Dev***
-illuzX](t.me/Grayhathacker767)"""
+**REPO**
+[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt)
+**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
+[𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
-➠ my Name  :[{bot_name}](t.me/{bot_username})
+➠ 𝐌𝐘 𝐍𝐀𝐌𝐄:[{bot_name}](t.me/{bot_username})
 
-➠ Developer :[illuzX](t.me/Grayhathacker767)
+➠ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫:[𝐈𝐥𝐥𝐮𝐳𝐗🎩](t.me/Grayhathacker767)
 
-➠ owner :[Move Bazzer](t.me//mvbzzer)
+➠ 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐨𝐫📍:[Move Bazzer](t.me//mvbzzer)
 
-➠  Library  :Pyrogram
+➠ 𝐥𝐢𝐛𝐫𝐚𝐫𝐲🎗:𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦
 
-➠  Language :Python3
+➠ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞📚:𝐏𝐲𝐭𝐡𝐨𝐧𝟑
 
-➠  Database :Mongodb
+➠ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞🗂️:𝐌𝐨𝐧𝐠𝐨𝐝𝐛
 
-➠  server   :Heroko▒"""
+➠ 𝐒𝐞𝐫𝐯𝐞𝐫💻:𝐇𝐞𝐫𝐨𝐤𝐮
+
+➠ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬🛠:1.0-Beta """
+#https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
+
+
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
@@ -59,7 +63,8 @@ Size : <i>{size}</i>
  » /channel - Add Channel List"""
 
 
-    ADD_YOUR_GROUP = """**__bruh, Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+    ADD_YOUR_GROUP = """**__bruh, Its That The Correct Spel Of That Movie ??? 
+Pls \n Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
