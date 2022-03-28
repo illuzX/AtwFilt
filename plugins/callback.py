@@ -224,10 +224,13 @@ async def cb_handler(client: illuzX, query):
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
         elif query.data.startswith("pmfile"):
-            if FORCES_SUB and not await is_subscribed(client, query):
-                await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
-            except PeerIdInvalid:
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+        except PeerIdInvalid:
+            await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+        except Exception as e:
+            await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+    elif query.data.startswith("checksub"):
+        if AUTH_CHANNEL and not await is_subscribed(client, query):
+            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
