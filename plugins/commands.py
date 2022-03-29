@@ -15,7 +15,7 @@ async def start_message(bot, message):
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
             buttons = [[
-             InlineKeyboardButton("🔍𝐒𝐄𝐀𝐑𝐂𝐇🔎", switch_inline_query_current_chat='')
+             InlineKeyboardButton("🔍;;𝐬𝐞𝐚𝐫𝐜𝐡 🔎", switch_inline_query_current_chat='')
             ] ,[
              InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb")
             ] ,[
@@ -23,7 +23,7 @@ async def start_message(bot, message):
              ]]
         else:
             buttons = [[
-             InlineKeyboardButton("🔍𝐒𝐄𝐀𝐑𝐂𝐇🔎", switch_inline_query_current_chat='')
+             InlineKeyboardButton("🔍 𝐬𝐞𝐚𝐫𝐜𝐡 🔎", switch_inline_query_current_chat='')
           ] ,[
              InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb")
           ] ,[
