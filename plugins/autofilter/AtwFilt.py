@@ -7,7 +7,7 @@ from config import CACHE_TIME, AUTH_USERS, FORCES_SUB, CUSTOM_FILE_CAPTION
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or FORCES_SUB else CACHE_TIME
 
-@illuzX.on_message(Worker.command('Srch') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('Srch') & Worker.user(AUTH_USERS) if AUTH_USERS else None)
 def get_reply_markup(query):
     buttons = [[
               InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
