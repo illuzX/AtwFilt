@@ -12,8 +12,8 @@ db = Database()
 @illuzX.on_message(Worker.private & Worker.command(["search"]))
 async def search_cmd(bot, cmd):
     if not await db.is_user_exist(cmd.from_user.id):
-        await db.add_user(reply.from_user.id)
-    if len(reply.command) != 2:
+        await db.add_user(cmd.from_user.id)
+    if len(msg.command) != 2:
         if cmd.from_user.id not in ADMINS: 
             buttons = [[
               InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
