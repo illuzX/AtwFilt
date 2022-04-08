@@ -26,8 +26,3 @@ async def total(bot, message):
         parse_mode="Markdown",
         quote=True
     )
-
-
-@Client.on_message(filters.command("broadcast") & filters.user(Config.OWNER_ID) & filters.reply & ~filters.edited)
-async def broadcast_in(_, m: Message):
-    await broadcast_handler(m)
