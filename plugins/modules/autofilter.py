@@ -36,7 +36,7 @@ async def group_filters(client, message):
                     text=SET_SPEL_M.format(query=search, mention=message.from_user.mention),
                     reply_markup=reply_markup                 
                 )
-                await asyncio.sleep(60) 
+                await asyncio.sleep(30) 
                 await AtwFilt_delete.delete()
             return
         if not btn:
@@ -62,16 +62,16 @@ async def group_filters(client, message):
             imdb=await get_poster(search)
             if imdb and imdb.get('poster'):
                 dell=await message.reply_photo(photo=imdb.get('poster'), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(300)
+            await query.message.delete()
             elif imdb:
                 dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(300)
+            await query.message.delete()
             else:
                 dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_2.format(query=search, mention=message.from_user.mention, chat=message.chat.title), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(300)
+            await query.message.delete()
             return
 
         data = BUTTONS[keyword]
@@ -91,16 +91,16 @@ async def group_filters(client, message):
         imdb=await get_poster(search)
         if imdb and imdb.get('poster'):
             dell=await message.reply_photo(photo=imdb.get('poster'), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
-            await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")         
+            await asyncio.sleep(300)
+            await query.message.delete()
         elif imdb:
             dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
-            await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+            await asyncio.sleep(300)
+            await query.message.delete()
         else:
             dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_2.format(query=search, mention=message.from_user.mention, chat=message.chat.title), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
-            await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+            await asyncio.sleep(300)
+            await query.message.delete()
 
 
 
@@ -154,16 +154,16 @@ async def pm_autofilter(client, message):
             imdb=await get_poster(search)
             if imdb and imdb.get('poster'):
                 dell=await message.reply_photo(photo=imdb.get('poster'), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(300)
+            await query.message.delete()
             elif imdb:
                 dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(300)
+            await query.message.delete()
             else:
                 dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_2.format(query=search, mention=message.from_user.mention, chat=bot_info.BOT_NAME), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(300)
+            await query.message.delete()
 
             return
 
@@ -181,13 +181,13 @@ async def pm_autofilter(client, message):
         imdb=await get_poster(search)
         if imdb and imdb.get('poster'):
             dell=await message.reply_photo(photo=imdb.get('poster'), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
-            await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")         
+            await asyncio.sleep(300)
+            await query.message.delete()         
         elif imdb:
             dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
-            await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+            await asyncio.sleep(300)
+            await query.message.delete()
         else:
             dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_2.format(query=search, mention=message.from_user.mention, chat=bot_info.BOT_NAME), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
-            await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+            await asyncio.sleep(300)
+            await query.message.delete()
