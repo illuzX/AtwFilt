@@ -1,4 +1,4 @@
-git+https://github.com/illuzX/pyrogram@inline-m
+git+https://github.com/subinps/pyrogram@inline-m
 pyromod
 requests
 parse-torrent-name
