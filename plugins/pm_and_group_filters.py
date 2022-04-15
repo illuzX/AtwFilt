@@ -1,5 +1,5 @@
 from pyrogram import Client as illuzX, filters as Worker
-from plugins.modules.autofilter import group_filters,autofilter
+from plugins.modules.autofilter import group_filters,pm_autofilter
 from config import AUTH_GROUPS, AUTH_USERS
 from plugins.database.broadcast_db import Database
 
