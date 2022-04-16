@@ -9,8 +9,9 @@ logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or FORCES_SUB else CACHE_TIME
 
 db = Database()
-@illuzX.on_message(Worker.private & Worker.command(["search"]))
-async def search_cmd(bot, cmd):
+@illuzX.on_message(filters.command("Search"))
+async def start_handler(bot, message):
+    await message.reply_message
     if not await db.is_user_exist(cmd.from_user.id):
         await db.add_user(cmd.from_user.id)
     if len(msg.command) != 2:
