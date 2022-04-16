@@ -44,7 +44,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # ==================================
 
 team_name = os.environ.get('team_name','TeamCode')
-team_link = os.environ.get('team_link', 't.me/grayhathacker767')
+team_link = os.environ.get('team_link', 't.me/grayhathacker767'):
 
 # ==================================
 # ==================================
