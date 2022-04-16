@@ -42,7 +42,7 @@ async def is_subscribed(bot, query):
 
 # ~~~~ Broadcast Message ~~~~ #
 
-async def send_msg(user_id, message):
+async def InfoSend(user_id, message):
     try:
         await message.copy(chat_id=user_id)
         return 200, None
