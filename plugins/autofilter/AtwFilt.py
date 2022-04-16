@@ -13,10 +13,6 @@ db = Database()
 async def start_handler(bot, message):
     await message.reply_message
     if not await db.is_user_exist(cmd.from_user.id):
-        await db.add_user(cmd.from_user.id)
-    if len(msg.command) != 2:
-        if cmd.from_user.id not in ADMINS: 
-            buttons = [[
               InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
         ]]
     return InlineKeyboardMarkup(buttons)
