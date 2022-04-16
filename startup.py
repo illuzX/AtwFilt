@@ -4,7 +4,6 @@ class AtwFilt(object):
     
 Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
 Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username}) 
-
 With Proper #Google Spelling..!!
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
@@ -23,13 +22,13 @@ With Proper #Google Spelling..!!
 
 ➠ 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐨𝐫:[𝐌𝐨𝐯𝐢𝐞 𝐛𝐚𝐳𝐳𝐞𝐫📜](t.me//mvbzzer)
 
-➠ 𝐥𝐢𝐛𝐫𝐚𝐫𝐲🎗:𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦
+➠ 𝐥𝐢𝐛𝐫𝐚𝐫𝐲🎗:<a href=https://github.com/pyrogram/pyrogram>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
 
-➠ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞📚:𝐏𝐲𝐭𝐡𝐨𝐧𝟑
+➠ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞📚:<a href=https://www.python.org/>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a>
 
-➠ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞🗂️:𝐌𝐨𝐧𝐠𝐨𝐝𝐛
+➠ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞🗂️:<a href=https://www.mongodb.com>𝐌𝐨𝐧𝐠𝐨𝐝𝐛</a>
 
-➠ 𝐒𝐞𝐫𝐯𝐞𝐫💻:𝐇𝐞𝐫𝐨𝐤𝐮
+➠ 𝐒𝐞𝐫𝐯𝐞𝐫💻:<a href=https://www.heroku.com>𝐇𝐞𝐫𝐨𝐤𝐮</a>
 
 ➠ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬🛠:𝟏.𝟎.𝟏-ᵇᵉᵗᵃ"""
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
