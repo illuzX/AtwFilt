@@ -33,7 +33,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 # ==================================
 # Empty 😂
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-CACHE_TIME = int(environ.get('CACHE_TIME', 100))
+CACHE_TIME = int(environ.get('CACHE_TIME', 60))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 BUTTONS = {}
 CURRENT = int(environ.get("SKIP", 2))
