@@ -42,6 +42,12 @@ FORCES_SUB = int(FORCE) if FORCE and id_pattern.search(FORCE) else FORCE
 DATABASE_NAME = environ.get("DATABASE_NAME", 'UserStorage2')
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # ==================================
+
+team_name = os.environ.get('team_name', 'Who am i' 🇮🇳')
+team_link = os.environ.get('team_link', 't.me/grayhathacker767')
+
+# ==================================
+# ==================================
 # About Bot 🤖
 class bot_info(object):
     BOT_NAME = None
