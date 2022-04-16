@@ -67,5 +67,3 @@ class lucifer_temp(object):
     BUTTONS = {} # AutoFilter
     CURRENT=int(os.environ.get("SKIP", 2)) # Skip Files
     CANCEL = False # Cancel Index
-
-
