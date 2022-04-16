@@ -1,7 +1,7 @@
 import asyncio, aiofiles, aiofiles.os, datetime, traceback, random, string, time, os
 from pyrogram import Client as illuzX, filters as filter
 from plugins.database.users_chats_db import db
-from plugins.database._utils import send_msg
+from plugins.database._utils import InfoSend
 from random import choice
 from config import ADMINS
 
