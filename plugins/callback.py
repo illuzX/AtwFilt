@@ -237,7 +237,12 @@ async def cb_handler(client: illuzX, query):
 
                 buttons = [[
                   InlineKeyboardButton('DoWnLoad More', url='https://t.me/Mvbzzer')
-                  ]]                 
+               ],[
+                  InlineKeyboardButton("Search Inline",switch_inline_query_current_chat='')
+               ],[
+                  InlineKeyboardButton("DataBase", url='https://t.me/Files_For_Bot'
+                  
+                      ]
                 
                 await query.answer()
                 await client.send_cached_media(
@@ -258,7 +263,7 @@ async def cb_handler(client: illuzX, query):
                 ], [
                  InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
                 ], [
-                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/my_TG_Bot2")
+                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/mvbzzer")
                  ]]
             else:
                 buttons = [[
@@ -266,7 +271,7 @@ async def cb_handler(client: illuzX, query):
                 ], [
                  InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
                 ], [
-                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/my_TG_Bot2")
+                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/mvbzzer")
                  ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 

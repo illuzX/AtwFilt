@@ -33,7 +33,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 # ==================================
 # Empty 😂
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-CACHE_TIME = int(environ.get('CACHE_TIME', 100))
+CACHE_TIME = int(environ.get('CACHE_TIME', 60))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 BUTTONS = {}
 CURRENT = int(environ.get("SKIP", 2))
@@ -41,6 +41,12 @@ CANCEL = False
 FORCES_SUB = int(FORCE) if FORCE and id_pattern.search(FORCE) else FORCE
 DATABASE_NAME = environ.get("DATABASE_NAME", 'UserStorage2')
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
+# ==================================
+
+team_name = os.environ.get('team_name', 'Who am i' 🇮🇳')
+team_link = os.environ.get('team_link', 't.me/grayhathacker767')
+
+# ==================================
 # ==================================
 # About Bot 🤖
 class bot_info(object):

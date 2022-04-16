@@ -2,11 +2,8 @@ import re, asyncio, random
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from plugins.database._utils import get_size, split_list
 from plugins.database.autofilter_db import get_filter_results, get_poster
-from config import BUTTONS, bot_info, SPELL_MODE, SUPPORT, BOT_PICS
+from config import BUTTONS, bot_info, SPELL_MODE, SET_SPEL_M, SUPPORT, BOT_PICS
 from startup import AtwFilt
-
-
-#everthing---Is Vidhi Vere Nth Parayana 
 
 async def group_filters(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
@@ -20,7 +17,7 @@ async def group_filters(client, message):
                 file_id = file.file_id
                 filename = f"{get_size(file.file_size)} {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", callback_data=f"AtwFilt#{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", callback_data=f"AtwFiltBot#{file_id}")]
                 )
         else:
             if SPELL_MODE:
@@ -32,12 +29,12 @@ async def group_filters(client, message):
                  InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
                  ]]  
                 )    
-                AtwFilt_delete=await message.reply_text(
+                atwfiltDl=await message.reply_text(
                     text=SET_SPEL_M.format(query=search, mention=message.from_user.mention),
                     reply_markup=reply_markup                 
                 )
                 await asyncio.sleep(60) 
-                await AtwFilt_delete.delete()
+                await atwfiltDl.delete()
             return
         if not btn:
             return
@@ -62,8 +59,8 @@ async def group_filters(client, message):
             imdb=await get_poster(search)
             if imdb and imdb.get('poster'):
                 dell=await message.reply_photo(photo=imdb.get('poster'), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
-                await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
+                await asyncio.sleep(100)
+                await atwfiltDl.delete()
             elif imdb:
                 dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_1.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
                 await asyncio.sleep(1000)
@@ -102,13 +99,8 @@ async def group_filters(client, message):
             await asyncio.sleep(1000)
             await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
 
+# ----------tG PM  Module---------- #
 
-
-# ---------- Bot PM ---------- #
-
-
-
-#@LuciferMoringstar_Robot.on_message(Worker.text & Worker.private & Worker.incoming & Worker.chat(AUTH_GROUPS) if AUTH_GROUPS else Worker.text & Worker.group & Worker.incoming)
 async def pm_autofilter(client, message):
     if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
         return
@@ -128,7 +120,7 @@ async def pm_autofilter(client, message):
                 photo=random.choice(BOT_PICS),
                 caption=AtwFilt.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("🔍Google🔎", url=f"{SUPPORT}")
+                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
                    ]]
                 )
             )
