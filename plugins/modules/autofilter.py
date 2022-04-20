@@ -120,7 +120,7 @@ async def pm_autofilter(client, message):
                 photo=random.choice(BOT_PICS),
                 caption=AtwFilt.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
                    ]]
                 )
             )
@@ -138,8 +138,7 @@ async def pm_autofilter(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages"),
-                 InlineKeyboardButton("Close 🗑️", callback_data="close")]
+                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages"),]
             )
 
 
@@ -166,8 +165,7 @@ async def pm_autofilter(client, message):
             [InlineKeyboardButton(text="Next Page ➡",callback_data=f"nextgroup_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages"),
-             InlineKeyboardButton("Close 🗑️", callback_data="close")]
+            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages"),]
         )
 
         imdb=await get_poster(search)

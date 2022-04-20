@@ -59,8 +59,8 @@ Size : <i>{size}</i>
  » /channel - Add Channel List"""
 
 
-    ADD_YOUR_GROUP = """**__bruh, Its That The Correct Spel Of That Movie ??? 
-Pls \n Check Movie Name In #Google and Try ! Then No Results Add Movie Year and Try , Again No Results ? It's Not Available In Our Database Or Movie Not Released !__**"""
+    ADD_YOUR_GROUP = """**
+𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 {query} 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
