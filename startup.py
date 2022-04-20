@@ -26,9 +26,10 @@ AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
 ABOUT ME
 
 ○ Creator : [IlluzX](t.me/Grayhathacker767)
-○ Language: Python 3.10.0
-○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>
+○ Language: <a href='https://docs.python.org/3/'>Python 3.10.0
+○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>
 ○ Channel : [UZX BOTS](t.me/UZX_BOTS)
+○ Database: <a href='https://www.mongodb.com/'>mongodb
 
 """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
