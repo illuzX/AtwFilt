@@ -4,6 +4,7 @@ import psutil
 from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import Media
 from config import ADMINS
+from plugins.database.user_chats_db import db
 from plugins.Addmin.runner import humanbytes
 logger = logging.getLogger(__name__)
 
