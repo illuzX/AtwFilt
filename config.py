@@ -9,8 +9,8 @@ def is_enabled(value, default):
         return False
     else:
         return default
-
-# ==================================
+class AllAtw(object):
+  
 API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
@@ -20,9 +20,6 @@ SUPPORT = environ.get("SUPPORT", "https://www.google.com")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
 SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
-
-class db(object):
-  
 DATABASE_URI = environ.get("DATABASE_URI", "")
 FORCE = environ.get('FORCES_SUB')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", AtwFilt.FILE_CAPTIONS)
@@ -48,8 +45,3 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # ==================================
 # About Bot 🤖
-class bot_info(object):
-    BOT_NAME = None
-    BOT_USERNAME = None
-    BOT_ID = None
-
