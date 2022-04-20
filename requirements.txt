@@ -1,7 +1,6 @@
 git+https://github.com/illuzX/pyrogram@inline-m
 pyromod
 requests
-parse-torrent-name
 aiofiles
 dnspython
 tgcrypto
@@ -11,3 +10,10 @@ marshmallow==3.14.1
 umongo==3.0.1
 bs4
 imdbpy
+psutil
+python-dotenv
+dnspython
+motor
+Pillow
+hachoir
+mutagen
