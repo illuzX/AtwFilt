@@ -21,7 +21,7 @@ SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
 SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
 
-class Config(object):
+class db(object):
   
 DATABASE_URI = environ.get("DATABASE_URI", "")
 FORCE = environ.get('FORCES_SUB')
