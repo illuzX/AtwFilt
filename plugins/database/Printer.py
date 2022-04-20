@@ -72,4 +72,4 @@ class Database:
         return user or None
 
 
-db = Database(Config.MONGODB_URI, "AtwFilt")
+db = Database(MONGODB_URI, "AtwFilt")
