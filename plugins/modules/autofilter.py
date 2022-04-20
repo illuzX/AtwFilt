@@ -49,11 +49,7 @@ async def group_filters(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages"),
-                 InlineKeyboardButton("Close 🗑️", callback_data="close")]
-            )
-            buttons.append(
-                [InlineKeyboardButton(text="🤖 CHECK MY PM 🤖", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
+                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages"),]
             )
 
             imdb=await get_poster(search)
@@ -78,11 +74,7 @@ async def group_filters(client, message):
             [InlineKeyboardButton(text="Next Page ➡",callback_data=f"nextgroup_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages"),
-             InlineKeyboardButton("Close 🗑️", callback_data="close")]
-        )
-        buttons.append(
-            [InlineKeyboardButton(text="🤖 CHECK MY PM 🤖", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
+            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages"),]
         )
 
         imdb=await get_poster(search)
@@ -116,8 +108,8 @@ async def pm_autofilter(client, message):
                     [InlineKeyboardButton(text=f"{filename}", callback_data=f"pmfile#{file_id}")]
                 )
         else:
-            await message.msg(
-                caption=AtwFilt.ADD_YOUR_GROUP,
+            await message.reply_text(
+                text=AtwFilt.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
                    InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
                    ]]
