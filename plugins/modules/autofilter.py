@@ -116,8 +116,7 @@ async def pm_autofilter(client, message):
                     [InlineKeyboardButton(text=f"{filename}", callback_data=f"pmfile#{file_id}")]
                 )
         else:
-            await message.reply_photo(
-                photo=random.choice(BOT_PICS),
+            await message.msg(
                 caption=AtwFilt.ADD_YOUR_GROUP,
                 reply_markup=InlineKeyboardMarkup([[
                    InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
