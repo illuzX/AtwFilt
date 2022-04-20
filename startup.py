@@ -9,6 +9,8 @@ With Proper #Google Spelling..!!
 
     HELP_MSG = """**
 **HELP MODULE**
+
+
 HEY BRUH SOME TIPS TO USE ME😂
 IM A AMERICAN SO ONLY ENGILSH 😬
 MY DEV SAY TO ME GIVE MOVIES EVERYONE SO 
@@ -42,7 +44,7 @@ AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
-    FILE_CAPTIONS = """  <b>Join [Movie bazzer](https://t.me/mvbzzer/1661)</b> 
+    FILE_CAPTIONS = """  <b>Join [Movie bazzer](https://t.me/mvb_tg)</b> 
 <code>mvb {title}</code> 
 Size : <i>{size}</i>
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -64,20 +66,27 @@ Size : <i>{size}</i>
 
 
     ADD_YOUR_GROUP = """**
-𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 {search} 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈**"""
+𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 THIS MOVIE  𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
 🎬 Title : [{title}]({url})
+
 📆 Year : {year}
+
 🌟 Rating:{rating}/10
+
 🗨️ Genres: {genres}
+
 🎗️ uploded: [mvbzzer](t.me/mvbzzer)"""
 
     GET_MOVIE_2 = """
 📽️ Requested Movie : {query}
+
 👤 Requested By : {mention}
+
 Uploder :[MOVIE BAZZER](t.me/mvbzzer)
+
 © **{chat}**"""
