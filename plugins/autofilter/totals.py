@@ -1,4 +1,6 @@
 import logging
+import shutil
+import psutil
 from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import Media
 from config import ADMINS
