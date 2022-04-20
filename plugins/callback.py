@@ -263,14 +263,14 @@ async def cb_handler(client: illuzX, query):
               InlineKeyboardButton("source code ", callback_data="SOURCE_CODE"),
               InlineKeyboardButton("About 😎", callback_data="about")
               ]]               
-            await query.message.edit(text=AtwFilt.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt.HELP_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=False)
 
         elif query.data == "about":
             buttons = [[
              InlineKeyboardButton("Back", callback_data="start"),
              InlineKeyboardButton("Close 🗑️", callback_data="close")
              ]]               
-            await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME, dev_name=DEV_NAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=False)
 
         elif query.data == "close":
             await query.message.delete()
