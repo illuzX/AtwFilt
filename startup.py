@@ -23,21 +23,14 @@ AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
-➠ 𝐌𝐘 𝐍𝐀𝐌𝐄:[{bot_name}](t.me/{bot_username})
+ABOUT ME
 
-➠ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫:[𝐈𝐥𝐥𝐮𝐳𝐗🎩](t.me/Grayhathacker767)
+○ Creator : [IlluzX](t.me/Grayhathacker767)
+○ Language: Python 3.10.0
+○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>
+○ Channel : [UZX BOTS](t.me/UZX_BOTS)
 
-➠ 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐅𝐨𝐫:[𝐌𝐨𝐯𝐢𝐞 𝐛𝐚𝐳𝐳𝐞𝐫📜](t.me//mvbzzer)
-
-➠ 𝐥𝐢𝐛𝐫𝐚𝐫𝐲🎗:𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦
-
-➠ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞📚:𝐏𝐲𝐭𝐡𝐨𝐧𝟑
-
-➠ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞🗂️:𝐌𝐨𝐧𝐠𝐨𝐝𝐛
-
-➠ 𝐒𝐞𝐫𝐯𝐞𝐫💻:𝐇𝐞𝐫𝐨𝐤𝐮
-
-➠ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬🛠:𝟏.𝟎.𝟏-ᵇᵉᵗᵃ"""
+"""
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
 
 
