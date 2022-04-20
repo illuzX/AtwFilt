@@ -11,7 +11,6 @@ def is_enabled(value, default):
         return default
 
 # ==================================
-class Config(object):
 API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
