@@ -270,7 +270,8 @@ async def cb_handler(client: illuzX, query):
              InlineKeyboardButton("Back", callback_data="start"),
              InlineKeyboardButton("Close 🗑️", callback_data="close")
              ]]               
-            await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME), reply_markup=InlineKeyboardMarkup(False)
+            await query.message.edit(text=AtwFilt.ABOUT_MSG.format(mention=query.from_user.mention), reply_markup=InlineKeyboardMarkup(True)
+
 
         elif query.data == "close":
             await query.message.delete()
