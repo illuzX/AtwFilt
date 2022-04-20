@@ -6,7 +6,7 @@ from plugins.Addmin.runner import humanbytes
 logger = logging.getLogger(__name__)
 
 
-@illuzX.on_message(Worker.command("status") & Worker.user(config.ADMINS) & ~Worker.edited)
+@illuzX.on_message(Worker.command("status") & Worker.user(ADMINS)) & ~Worker.edited)
 async def status(bot,  Message):
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
