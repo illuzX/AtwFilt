@@ -6,7 +6,7 @@ from config import ADMINS
 logger = logging.getLogger(__name__)
 
 
-@illuzX.on_message(Worker.command('rmvd') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('delete') & Worker.user(ADMINS))
 async def delete(bot, message):
 
     reply = message.reply_to_message
@@ -35,7 +35,7 @@ async def delete(bot, message):
         await msg.edit('File Not Found In Database')
 
 
-@illuzX.on_message(Worker.command('rmv') & Worker.user(ADMINS))
+@illuzX.on_message(Worker.command('deleteall') & Worker.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
         text="This will delete all indexed files.\nDo you want to continue??",
