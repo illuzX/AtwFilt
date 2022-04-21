@@ -9,7 +9,6 @@ def is_enabled(value, default):
         return False
     else:
         return default
-class AllAtw(object):
   
    API_ID = int(environ["API_ID"])
    API_HASH = environ["API_HASH"]
