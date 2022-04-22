@@ -20,7 +20,8 @@ SUPPORT = environ.get("SUPPORT", "https://www.google.com")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
 SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
-class fil_info(object)
+# For Status👍😁
+class fil_info(object):
   DATABASE_URI = environ.get("DATABASE_URI", None)
   FORCE = environ.get('FORCES_SUB')
   CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", AtwFilt.FILE_CAPTIONS)
