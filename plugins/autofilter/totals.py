@@ -17,7 +17,7 @@ async def status(bot,  Message):
     cpu_usage = psutil.cpu_percent()
     ram_usage = psutil.virtual_memory().percent
     disk_usage = psutil.disk_usage('/').percent
-    await m.reply_text(
+    await reply_text(
         text=f"**Total Disk Space:** {total} \n"
              f"**Used Space:** {used}({disk_usage}%) \n"
              f"**Free Space:** {free} \n"
