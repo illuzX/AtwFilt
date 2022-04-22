@@ -11,17 +11,16 @@ def is_enabled(value, default):
         return default
 
 # ==================================
-API_ID = int(environ["API_ID"])
-API_HASH = environ["API_HASH"]
-B_KEYS = environ["BOT_TOKEN"]
-START_MSG = environ.get("START_MSG",AtwFilt.DEFAULT_MSG)
-BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/d5074341e29977da5ae60.jpg https://telegra.ph/file/5687297fe4b13efa8d595.jpg')).split()
-SUPPORT = environ.get("SUPPORT", "https://www.google.com")
-SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
-SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
-# For Status👍😁
-class fil_info(object):
+class fil_info (object):
+  API_ID = int(environ["API_ID"])
+  API_HASH = environ["API_HASH"]
+  B_KEYS = environ["BOT_TOKEN"]
+  START_MSG = environ.get("START_MSG",AtwFilt.DEFAULT_MSG)
+  BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/d5074341e29977da5ae60.jpg https://telegra.ph/file/5687297fe4b13efa8d595.jpg')).split()
+  SUPPORT = environ.get("SUPPORT", "https://www.google.com")
+  SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
+  SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
+  LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
   DATABASE_URI = environ.get("DATABASE_URI", None)
   FORCE = environ.get('FORCES_SUB')
   CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", AtwFilt.FILE_CAPTIONS)
