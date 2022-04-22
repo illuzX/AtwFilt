@@ -298,9 +298,9 @@ async def cb_handler(client: illuzX, query):
             users = await db.total_users_count()
             chats = await db.total_chat_count()
             monsize = await db.get_db_size()
-           free = 536870912 - monsize
-           monsize = get_size(monsize)
-           free = get_size(free)
+            free = 536870912 - monsize
+            monsize = get_size(monsize)
+            free = get_size(free)
         await query.message.edit_text(
             text=AtwFilt.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
