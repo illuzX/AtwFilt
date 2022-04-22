@@ -3,7 +3,7 @@ import shutil
 import psutil
 from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import Media
-from plugins.database import runner
+from plugins.addmin import runner
 from database.users_chats_db import db
 from config import ADMINS
 logger = logging.getLogger(__name__)
