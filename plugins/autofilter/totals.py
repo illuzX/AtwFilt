@@ -2,6 +2,7 @@ import logging
 import shutil
 import psutil
 from pyrogram import Client as illuzX, filters as Worker
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from utils import get_size
 from plugins.database.autofilter_db import Media
 from plugins.database.users_chats_db import db
