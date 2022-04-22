@@ -293,7 +293,6 @@ async def cb_handler(client: illuzX, query):
              InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
              InlineKeyboardButton('♻️', callback_data='close')
              ]]
-          reply_markup = InlineKeyboardMarkup(buttons)
           total = await Media.count_documents()
           users = await db.total_users_count()
           chats = await db.total_chat_count()
@@ -303,8 +302,7 @@ async def cb_handler(client: illuzX, query):
           free = get_size(free)
               await query.message.edit_text(
               text=AtwFilt.STATUS_TXT.format(total, users, chats, monsize, free),
-              reply_markup=reply_markup,
-              parse_mode='html')
+              reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=(True)
         elif query.data == "pages":
             await query.answer()
 
