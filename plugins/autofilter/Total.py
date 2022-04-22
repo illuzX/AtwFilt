@@ -1,7 +1,6 @@
 import logging
 from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import Media
-from plugins.database.user_chat_db import db
 
 from config import ADMINS
 logger = logging.getLogger(__name__)
