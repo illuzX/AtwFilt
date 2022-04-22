@@ -3,7 +3,6 @@ import shutil
 import psutil
 from pyrogram import Client as illuzX, filters as Worker
 from plugins.database.autofilter_db import Media
-from plugins.addmin import runner
 from database.users_chats_db import db
 from config import ADMINS
 logger = logging.getLogger(__name__)
@@ -19,7 +18,7 @@ async def status(bot,  Message):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.edit_text(
-            text=runner.STATUS_TXT.format(total, users, chats, monsize, free),
+            text=AtwFilt.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode='html'
         )
