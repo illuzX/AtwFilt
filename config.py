@@ -1,14 +1,14 @@
 import re
 from os import environ
 from startup import AtwFilt
-id_pattern = re.compile(r'^.\d+$')
-def is_enabled(value, default):
-    if value.lower() in ["true", "yes", "1", "enable", "on"]:
-        return True
-    elif value.lower() in ["false", "no", "0", "disable", "off"]:
-        return False
-    else:
-        return default
+  id_pattern = re.compile(r'^.\d+$')
+  def is_enabled(value, default):
+      if value.lower() in ["true", "yes", "1", "enable", "on"]:
+          return True
+      elif value.lower() in ["false", "no", "0", "disable", "off"]:
+          return False
+      else:
+          return default
 
 # ==================================
 class fil_info (object):
