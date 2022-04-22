@@ -2,7 +2,7 @@
 
 import datetime
 import motor.motor_asyncio
-import config.MONGODB_URI
+import config
 
 # user Choise ___
 class Database:
@@ -72,4 +72,4 @@ class Database:
         return user or None
 
 
-db = Database(AllAtw.MONGODB_URI, "AtwFilt")
+db = Database(MONGODB_URI, "AtwFilt")
