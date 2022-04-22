@@ -2,7 +2,7 @@
 
 import datetime
 import motor.motor_asyncio
-from config import AllAtw
+import config.MONGODB_URI
 
 # user Choise ___
 class Database:
