@@ -1,14 +1,14 @@
 import re
 from os import environ
 from startup import AtwFilt
-  id_pattern = re.compile(r'^.\d+$')
-  def is_enabled(value, default):
-      if value.lower() in ["true", "yes", "1", "enable", "on"]:
-          return True
-      elif value.lower() in ["false", "no", "0", "disable", "off"]:
-          return False
-      else:
-          return default
+id_pattern = re.compile(r'^.\d+$')
+def is_enabled(value, default):
+    if value.lower() in ["true", "yes", "1", "enable", "on"]:
+        return True
+    elif value.lower() in ["false", "no", "0", "disable", "off"]:
+        return False
+    else:
+        return default
 
 # ==================================
 class fil_info (object):
@@ -22,7 +22,7 @@ class fil_info (object):
   SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
   LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
   DATABASE_URI = environ.get("DATABASE_URI", None)
-  FORCE = environ.get('FORCES_SUB')
+FORCE = environ.get('FORCES_SUB')
   CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", AtwFilt.FILE_CAPTIONS)
   DEV_NAME = environ.get("DEV_NAME", "Illuzx")
   ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
