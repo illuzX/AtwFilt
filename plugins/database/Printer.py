@@ -72,4 +72,4 @@ class Database:
         return user or None
 
 
-db = Database(MONGODB_URI)
+db = Database(fil_info.MONGODB_URI,"AutoFilterBot")
