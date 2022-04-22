@@ -71,5 +71,3 @@ class Database:
         user = await self.col.find_one({'id': int(id)})
         return user or None
 
-
-db = Database(MONGODB_URI, "AtwFilt")
