@@ -9,11 +9,9 @@ With Proper #Google Spelling..!!
 
     HELP_MSG = """**
 **HELP MODULE**
-
-
 HEY BRUH SOME TIPS TO USE ME😂
 IM A AMERICAN SO ONLY ENGILSH 😬
-MY DEV SAY TO ME GIVE MOVIES EVERYONE SO 
+MY DEV SAY TO ME GIVE MOVIES To EVERYONE SO 
 U CAN ASK ME WITH PROPER SPELLING BCZ IM 
 AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
     SOURCE_CODE = """
@@ -27,18 +25,12 @@ ABOUT ME
 
 ○ Creator : [IlluzX](t.me/Grayhathacker767)
 ○ Language: <a href='https://docs.python.org/3/'>Python 3.10.0
-○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>
+○ Library : <a href='https://docs.pyrogram.org/>Pyrogram asyncio</a>
 ○ Channel : [UZX BOTS](t.me/UZX_BOTS)
-○ Database: <a href='https://www.mongodb.com/'>mongodb
+○ Database: <a href='https://www.mongodb.com/>mongodb
 
 """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
-
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
 
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
@@ -64,21 +56,18 @@ Size : <i>{size}</i>
  » /channel - Add Channel List"""
 
 
-    ADD_YOUR_GROUP = """**
-𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 THIS MOVIE  𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈**"""
+    ADD_YOUR_GROUP = """
+𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 {query} IN MY DATABASE 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
 🎬 Title : [{title}]({url})
-
+📛 Requested by :{mention}
 📆 Year : {year}
-
 🌟 Rating:{rating}/10
-
 🗨️ Genres: {genres}
-
 🎗️ uploded: [mvbzzer](t.me/mvbzzer)"""
 
     GET_MOVIE_2 = """
