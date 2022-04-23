@@ -56,8 +56,8 @@ Size : <i>{size}</i>
  » /channel - Add Channel List"""
 
 
-    ADD_YOUR_GROUP = """
-𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 {query} IN MY DATABASE 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈"""
+    ADD_YOUR_GROUP = """**
+𝙾𝙼𝙶 𝙸 𝙲𝙰𝙽'𝚃 𝙵𝙸𝙽𝙳 #{query} 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴 𝙲𝙷𝙴𝙲𝙺 𝚈𝙾𝚄𝚁𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝙸𝙽 #𝙶𝙾𝙾𝙶𝙻𝙴 𝙰𝙽𝙳 𝚃𝚁𝚈**"""
  
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
