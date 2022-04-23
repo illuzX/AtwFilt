@@ -111,7 +111,7 @@ async def pm_autofilter(client, message):
             await message.reply_text(
                 text=AtwFilt.ADD_YOUR_GROUP.format(query=search),
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?query?")
+                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q=%20movie")
                    ]]
                 )
             )
