@@ -115,8 +115,7 @@ async def pm_autofilter(client, message):
                    ]]
                 )
             )
-                 await asyncio.sleep(60) 
-                 await atwfiltDl.delete()
+              
             return
         if not btn:
             return
