@@ -38,7 +38,9 @@ AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
 <code>{title}</code> 
 Size : <i>{size}</i>
 ━━━━━━━━━━━━━━━━━━━━━━
-<b>[Movie bazzer](https://t.me/mvb_tg)</b>**"""
+<b>[Movie bazzer](https://t.me/mvb_tg)</b
+>       {file_caption}
+**"""
 
     
 
