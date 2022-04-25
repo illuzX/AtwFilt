@@ -27,6 +27,8 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", AtwFilt.FILE_CAPTIONS)
 DEV_NAME = environ.get("DEV_NAME", "Illuzx")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', "").split()]
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
@@ -38,6 +40,7 @@ CANCEL = False
 FORCES_SUB = int(FORCE) if FORCE and id_pattern.search(FORCE) else FORCE
 DATABASE_NAME = environ.get("DATABASE_NAME", 'UserStorage2')
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
+
 # ==================================
 # About Bot 🤖
 class bot_info(object):
