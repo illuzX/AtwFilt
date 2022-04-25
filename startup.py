@@ -39,7 +39,7 @@ class AtwFilt(object):
 <code>{title}</code> 
 Size : <i>{size}</i>
 ━━━━━━━━━━━━━━━━━━━━━━
-<b>[Movie bazzer](https://t.me/mvb_tg)</b
+<b>[Mᴏᴠɪᴇ Bᴀᴢᴢᴇʀ](https://t.me/mvb_tg)</b
 >       {file_caption}
 **"""
 
