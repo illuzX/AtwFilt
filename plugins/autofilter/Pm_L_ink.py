@@ -42,7 +42,7 @@ async def gen_link_s(bot, message):
 @illuzX.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/TeamEvamaria/10 https://t.me/TeamEvamaria/20</code>.")
+        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/uzx_bot/4 https://t.me/uzx_bot/6</code>.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
         return await message.reply("Use correct format.\nExample <code>/batch https://t.me/uzx_bots/4 https://t.me/uzx_bots/6</code>.")
