@@ -63,12 +63,7 @@ Size : <i>{size}</i>
 Hello 👋〘 {mention} 〙,
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
-🎬 Title : [{title}]({url})
-📛 Requested by :{mention}
-📆 Year : {year}
-🌟 Rating:{rating}/10
-🗨️ Genres: {genres}
-🎗️ uploded: [mvbzzer](t.me/mvbzzer)"""
+** 📁 Here is What I Found In My Database** **For Your Query : #[{title}]**"""
 
     GET_MOVIE_2 = """
 📽️ Requested Movie : {query}
