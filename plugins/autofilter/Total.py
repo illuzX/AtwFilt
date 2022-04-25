@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 @illuzX.on_message(Worker.command('myDb') & Worker.user(ADMINS))
 async def total(bot, message):
 
-    msg = await message.reply(text="⏳️"
+    msg = await message.reply("please wait...⏳️"
  quote=True)
     try:
         total = await Media.count_documents()
