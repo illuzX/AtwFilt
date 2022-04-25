@@ -10,16 +10,12 @@ class AtwFilt(object):
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-**HELP MODULE**
-<development-stage>...."""
+development-stage....**"""
     SOURCE_CODE = """
 **REPO**
-
 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt-V2)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
-
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
-
     ABOUT_MSG = """
 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 
@@ -63,7 +59,7 @@ Size : <i>{size}</i>
 Hello 👋〘 {mention} 〙,
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
-** 📁 Here is What I Found In My Database** **For Your Query : #[{title}]**"""
+** 📁 Here is What I Found In My Database** **For Your Query : #{title}**"""
 
     GET_MOVIE_2 = """
 📽️ Requested Movie : {query}
