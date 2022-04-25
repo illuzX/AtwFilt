@@ -108,10 +108,12 @@ async def pm_autofilter(client, message):
                     [InlineKeyboardButton(text=f"{filename}", callback_data=f"pmfile#{file_id}")]
                 )
         else:
+            if SPELL_MODE:
+                reply = search.replace(" ", '+')
             await message.reply_text(
                 text=AtwFilt.ADD_YOUR_GROUP.format(query=search),
                 reply_markup=InlineKeyboardMarkup([[
-                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q,=%20movie")
+                   InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
                    ]]
                 )
             )
