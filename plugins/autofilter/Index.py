@@ -1,7 +1,7 @@
 import logging
 import asyncio
 from pyrogram import Client as illuzX, filters 
-from pyrogram import.errors import FloodWait
+from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
 from config import ADMINS
 from config import INDEX_REQ_CHANNEL as LOG_CHANNEL
