@@ -5,19 +5,51 @@ from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
 from config import ADMINS
 from config import INDEX_REQ_CHANNEL as LOG_CHANNEL
-from plugins.database.autofilter_db import save_file
+from plugins.database.users_chats_db import save_file
 from plugins.database.meow_pm import temp
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+import re
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-lock = asyncio.Lock()
+@illuzX.on_callback_query(filters.regex(r'^index'))
+async def index_files(bot, query):
+    if query.data.startswith('index_cancel'):
+        temp.CANCEL = True
+        return await query.answer("Cancelling Indexing")
+    _, monz, chat, lst_msg_id, from_user = query.data.split("#")
+    if monz == 'reject':
+        await query.message.delete()
+        await bot.send_message(int(from_user),
+                               f'Your Submission for indexing {chat} has been decliened by our moderators.',
+                               reply_to_message_id=int(lst_msg_id))
+        return
 
-@illuzX.on_message((filter.forwarded | (filter.regex("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")) & filter.text ) & filter.private & filter.incoming)
+    if lock.locked():
+        return await query.answer('Wait until previous process complete.', show_alert=True)
+    msg = query.message
+
+    await query.answer('Processing...⏳', show_alert=True)
+    if int(from_user) not in ADMINS:
+        await bot.send_message(int(from_user),
+                               f'Your Submission for indexing {chat} has been accepted by our moderators and will be added soon.',
+                               reply_to_message_id=int(lst_msg_id))
+    await msg.edit(
+        "Starting Indexing",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
+        )
+    )
+    try:
+        chat = int(chat)
+    except:
+        chat = chat
+    await index_files_to_db(int(lst_msg_id), chat, msg, bot)
+
+
+@illuzX.on_message((filters.forwarded | (filters.regex("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")) & filters.text ) & filters.private & filters.incoming)
 async def send_for_index(bot, message):
     if message.text:
         regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
@@ -88,7 +120,7 @@ async def send_for_index(bot, message):
     await message.reply('ThankYou For the Contribution, Wait For My Moderators to verify the files.')
 
 
-@illuzX.on_message(filter.command('setskip') & filter.user(ADMINS))
+@illuzX.on_message(filters.command('setskip') & filters.user(ADMINS))
 async def set_skip_number(bot, message):
     if ' ' in message.text:
         _, skip = message.text.split(" ")
