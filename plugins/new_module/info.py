@@ -9,7 +9,7 @@ from pyrogram.types import (
     Message
 )
 #import Db Uri **To Know How Many Users (db)
-from plugins.database import db
+from plugins.database.users_chats_db import db
 from plugins.new_module.run_cb import humanbytes
 @illuzx.on_message(filters.command("status") & filters.user(config.ADMINS) & ~filters.edited)
 async def status_handler(_, m: Message):
