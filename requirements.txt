@@ -2,6 +2,7 @@ git+https://github.com/illuzX/pyrogram@inline-m
 pyromod
 requests
 aiofiles
+psutil
 dnspython
 tgcrypto
 pymongo[srv]==3.12.3
@@ -9,3 +10,4 @@ motor==2.5.1
 marshmallow==3.14.1
 umongo==3.0.1
 bs4
+
