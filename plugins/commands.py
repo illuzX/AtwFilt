@@ -12,7 +12,7 @@ db = Database()
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
-        await illuzX.send_message(LOG_CHANNEL, startup.LOG_CB.format(message.from_user.id, message.from_user.mention))
+        await bot.send_message(LOG_CHANNEL, startup.LOG_CB.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
             buttons = [[
