@@ -1,5 +1,5 @@
 from random import choice
-from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME, LOG_CHANNEL
+from config import START_MSG, FORCES_SUB, BOT_PICS, ADMINS, bot_info, DEV_NAME
 from pyrogram import Client as illuzX, filters as Worker
 from pyrogram.types import InlineKeyboardMarkup,  InlineKeyboardButton, CallbackQuery
 from startup import AtwFilt
@@ -12,10 +12,6 @@ db = Database()
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
-        await bot.send_message(
-        Config.LOG_CHANNEL,
-           f"#NEW_USER: \n[{.from_user.first_name}](tg://user?id={update.from_user.id}) Used!!"
-           )
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS: 
             buttons = [[
