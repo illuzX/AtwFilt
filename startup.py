@@ -3,17 +3,15 @@ class AtwFilt(object):
     DEFAULT_MSG = """👋hy {mention}..
     
 Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
+
 Here You Can Request Movie's, Just Sent [Movie Name](t.me/{bot_username}) 
 With Proper #Google Spelling..!!
+
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
 **HELP MODULE**
-HEY BRUH SOME TIPS TO USE ME😂
-IM A AMERICAN SO ONLY ENGILSH 😬
-MY DEV SAY TO ME GIVE MOVIES To EVERYONE SO 
-U CAN ASK ME WITH PROPER SPELLING BCZ IM 
-AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
+<development-stage>...."""
     SOURCE_CODE = """
 **REPO**
 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt-V2)
