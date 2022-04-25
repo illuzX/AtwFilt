@@ -2,13 +2,13 @@
 
 import shutil
 import psutil
+import config
 #import client 
 from pyrogram import Client as illuzx, filters 
 from pyrogram.types import (
     Message
 )
 #import Db Uri **To Know How Many Users (db)
-from config
 from plugins.database import db
 from plugins.new_module.run_cb import humanbytes
 @illuzx.on_message(filters.command("status") & filters.user(config.ADMINS) & ~filters.edited)
