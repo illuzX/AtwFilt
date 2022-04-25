@@ -1,6 +1,6 @@
 class AtwFilt(object):
 
-    DEFAULT_MSG = """👋hy {mention}..
+    DEFAULT_MSG = """hy {mention}..
     
 Im [{bot_name}](t.me/{bot_username}) Or you can call me as a [filter Bot Beta](t.me/{bot_username}) 
 
@@ -14,8 +14,10 @@ With Proper #Google Spelling..!!
 <development-stage>...."""
     SOURCE_CODE = """
 **REPO**
+
 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt-V2)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
+
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
@@ -41,7 +43,7 @@ Size : <i>{size}</i>
 **"""
 
     
-
+#~~Not work anymore~~
     illuzX = """
 **ADMINS COMMANDS**
 
@@ -51,7 +53,7 @@ Size : <i>{size}</i>
  » /total - How Many Files Saved
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
-
+# Close ????
 
     ADD_YOUR_GROUP = """**
 𝐼 𝐶𝑎𝑛'𝑡 𝐹𝑖𝑛𝑑  <i>#{query}</i> 𝑖𝑛 𝑚𝑦 𝑑𝑎𝑡𝑎𝑏𝑎𝑠𝑒 𝑠𝑜 𝑝𝑙𝑒𝑎𝑠𝑒 𝑐ℎ𝑒𝑐𝑘 𝑦𝑜𝑢'𝑟𝑒 𝑒𝑛𝑡𝑒𝑟𝑒𝑑 𝑠𝑝𝑒𝑙𝑙𝑖𝑛𝑔 𝑖𝑛 #𝐺𝑜𝑜𝑔𝑙𝑒/ 𝑂𝑟 𝑇ℎ𝑎𝑡 𝑀𝑜𝑣𝑖𝑒 𝑁𝑜𝑡 𝑅𝑒𝑙𝑒𝑎𝑠𝑒𝑑 /**"""
