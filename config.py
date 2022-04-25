@@ -22,16 +22,13 @@ SET_SPEL_M = environ.get("SPELL_MODE_TEXT",AtwFilt.SPELL_CHECK)
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001645658297))
 DATABASE_URI = environ.get("DATABASE_URI", None)
 FORCE = environ.get('FORCES_SUB')
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", AtwFilt.FILE_CAPTIONS)
 DEV_NAME = environ.get("DEV_NAME", "Illuzx")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', "").split()]
-
-
-# ==================================
-# Empty 😂
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
