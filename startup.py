@@ -21,13 +21,12 @@ AMERICAN 😂😂 USE /ABOUT TO KNOW ABOUT MY DEV, AND INFORMATION ℹ️...."""
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
-ABOUT ME
+𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 
-○ Creator : [IlluzX](t.me/Grayhathacker767)
-○ Language: <a href='https://docs.python.org/3/'>Python 3.10.0
-○ Library : <a href='https://docs.pyrogram.org/>Pyrogram asyncio</a>
-○ Channel : [UZX BOTS](t.me/UZX_BOTS)
-○ Database: <a href='https://www.mongodb.com/>mongodb
+○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : [𝐈𝐥𝐥𝐮𝐳𝕏](t.me/grayhathacker767)
+○ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : [𝐏𝐲𝐭𝐡𝐨𝐧 𝟑.𝟗.𝟏𝟎](https://www.python.org/)
+○ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐲𝐧𝐜𝐢𝐨 𝟏.𝟒.𝟏𝟐](https://docs.pyrogram.org/)
+○ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : [𝐔𝐳𝕏_𝐁𝐨𝐭𝐬](https://t.me/UZX_BOTS)
 
 """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
@@ -35,13 +34,11 @@ ABOUT ME
 #FILE : <code>{file_name}</code> 
 #❤️Size : <i>{file_size}</i>
 #✅CAPTION: {file_caption}
-    FILE_CAPTIONS = """  <b>Join [Movie bazzer](https://t.me/mvb_tg)</b> 
-<code>mvb {title}</code> 
+    FILE_CAPTIONS = """ 
+<code>{title}</code> 
 Size : <i>{size}</i>
 ━━━━━━━━━━━━━━━━━━━━━━
-➠ ɢʀᴏᴜᴘ    ➧@Mvbzzer
-➠ ᴄʜᴀɴɴᴇʟ ➧@Mvbseries
-➠ ᴄʜᴀɴɴᴇʟ ➧@MalayalamOTTUpdatesMvb**"""
+<b>[Movie bazzer](https://t.me/mvb_tg)</b>**"""
 
     
 
