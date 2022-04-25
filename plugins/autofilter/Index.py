@@ -8,7 +8,6 @@ from config import INDEX_REQ_CHANNEL as LOG_CHANNEL
 from plugins.database.autofilter_db import save_file
 from plugins.database.meow_pm import temp
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-import re
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
@@ -98,7 +97,7 @@ async def set_skip_number(bot, message):
         except:
             return await message.reply("Skip number should be an integer.")
         await message.reply(f"Successfully set SKIP number as {skip}")
-        lucifer_temp.CURRENT = int(skip)
+        temp.CURRENT = int(skip)
     else:
         await message.reply("Give me a skip number")
 
@@ -112,10 +111,10 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
     unsupported = 0
     async with lock:
         try:
-            current = lucifer_temp.CURRENT
-            lucifer_temp.CANCEL = False
-            async for message in bot.iter_messages(chat, lst_msg_id, lucifer_temp.CURRENT):
-                if lucifer_temp.CANCEL:
+            current = temp.CURRENT
+            temp.CANCEL = False
+            async for message in bot.iter_messages(chat, lst_msg_id, temp.CURRENT):
+                if temp.CANCEL:
                     await msg.edit(f"Successfully Cancelled!!\n\nSaved <code>{total_files}</code> files to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>")
                     break
                 current += 1
@@ -151,3 +150,4 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             logger.exception(e)
             await msg.edit(f'Error: {e}')
         else:
+            await msg.edit(f'Succesfully saved <code>{total_files}</code> to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>')
