@@ -5,9 +5,9 @@ aiofiles
 psutil
 dnspython
 tgcrypto
-pymongo[srv]
+pymongo[srv]==3.12.3
 motor
-marshmallow
-umongo
+marshmallow==3.14.1
+umongo==3.0.1
 bs4
 
