@@ -38,7 +38,7 @@ BUTTONS = {}
 CURRENT = int(environ.get("SKIP", 4))
 CANCEL = False
 FORCES_SUB = int(FORCE) if FORCE and id_pattern.search(FORCE) else FORCE
-DATABASE_NAME = environ.get("DATABASE_NAME", 'UserStorage6')
+DATABASE_NAME = environ.get("DATABASE_NAME", 'UserStorage2')
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # ==================================
