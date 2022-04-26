@@ -63,7 +63,7 @@ Size : <i>{size}</i>
 Hello 👋〘 {mention} 〙,
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
-** 📁 Here is What I Found In My Database** **For Your Query : #[{title}]**"""
+** 📁 Here is What I Found In My Database** **For Your Query : #{title}**"""
 
     GET_MOVIE_2 = """
 📽️ Requested Movie : {query}
