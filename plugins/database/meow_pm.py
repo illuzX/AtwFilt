@@ -1,6 +1,5 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
-from imdb import IMDb
 import asyncio
 from pyrogram.types import Message
 from typing import Union
