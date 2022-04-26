@@ -7,6 +7,7 @@ from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
 from config import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER, FORCES_SUB
+from imdb import IMDb
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 client = AsyncIOMotorClient(DATABASE_URI)
@@ -32,12 +33,12 @@ async def save_file(media):
 
     # TODO: Find better way to get same file_id for same media to avoid duplicates
     file_id, file_ref = unpack_new_file_id(media.file_id)
-
+    file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
     try:
         file = Media(
             file_id=file_id,
             file_ref=file_ref,
-            file_name=media.file_name,
+            file_name=file_name,
             file_size=media.file_size,
             file_type=media.file_type,
             mime_type=media.mime_type,
@@ -45,13 +46,19 @@ async def save_file(media):
         )
     except ValidationError:
         logger.exception('Error occurred while saving file in database')
+        return False, 2
     else:
         try:
             await file.commit()
-        except DuplicateKeyError:
-            logger.warning(media.file_name + " is already saved in database")
+        except DuplicateKeyError:      
+            logger.warning(
+                f'{getattr(media, "file_name", "NO_FILE")} is already saved in database'
+            )
+
+            return False, 0
         else:
-            logger.info(media.file_name + " is saved in database")
+            logger.info(f'{getattr(media, "file_name", "NO_FILE")} is saved to database')
+            return True, 1
 
 
 async def get_search_results(query, file_type=None, max_results=10, offset=0):
@@ -120,21 +127,6 @@ async def get_file_details(query):
     filedetails = await cursor.to_list(length=1)
     return filedetails
 
-
-async def is_subscribed(bot, query):
-    try:
-        user = await bot.get_chat_member(FORCES_SUB, query.from_user.id)
-    except UserNotParticipant:
-        pass
-    except Exception as e:
-        logger.exception(e)
-    else:
-        if not user.status == 'kicked':
-            return True
-
-    return False
-
-
 def encode_file_id(s: bytes) -> str:
     r = b""
     n = 0
@@ -173,6 +165,60 @@ def unpack_new_file_id(new_file_id):
 
 
 
+imdb = IMDb() 
 
+async def get_poster(query, bulk=False, id=False):
+    if not id:
+        pattern = re.compile(r"^(([a-zA-Z\s])*)?\s?([1-2]\d\d\d)?", re.IGNORECASE)
+        match = pattern.match(query)
+        year = None
+        if match:
+            title = match.group(1)
+            year = match.group(3)
+        else:
+            title = query
+        movieid = imdb.search_movie(title.lower(), results=10)
+        if not movieid:
+            return None
+        if year:
+            filtered=list(filter(lambda k: str(k.get('year')) == str(year), movieid))
+            if not filtered:
+                filtered = movieid
+        else:
+            filtered = movieid
+        movieid=list(filter(lambda k: k.get('kind') in ['movie', 'tv series'], filtered))
+        if not movieid:
+            movieid = filtered
+        if bulk:
+            return movieid
+        movieid = movieid[0].movieID
+    else:
+        movieid = int(query)
+    movie = imdb.get_movie(movieid)
+    title = movie.get('title')
+    genres = ", ".join(movie.get("genres")) if movie.get("genres") else None
+    rating = str(movie.get("rating"))
+    if movie.get("original air date"):
+        date = movie["original air date"]
+    elif movie.get("year"):
+        date = movie.get("year")
+    else:
+        date = "N/A"
+    poster = movie.get('full-size cover url')
+    plot = movie.get('plot')
+    if plot and len(plot) > 0:
+        plot = plot[0]
+    if plot and len(plot) > 800:
+        plot = plot[0:800] + "..."
+    return {
+        'title': title,
+        'year': date,
+        'genres': genres,
+        'poster': poster,
+        'plot': plot,
+        'rating': rating,
+        'url':f'https://www.imdb.com/title/tt{movieid}'
+
+    }
 
 
