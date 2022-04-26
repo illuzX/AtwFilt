@@ -1,7 +1,8 @@
 class AtwFilt(object):
 
     DEFAULT_MSG = """hy {mention}..
-        Sorry 😐 this bot not work now 
+        Sorry 😐 this bot not working now 
+,ℹ️ℹ️ under maintenance ℹ️ℹ️ 
     please try again later
 because im so sleepy 😪😴"""
 
