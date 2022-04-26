@@ -9,6 +9,11 @@ class AtwFilt(object):
 
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
+    DEFAULT_MSG_2
+    """Sorry 😐 this bot not work now 
+    please try again later
+because im so sleepy 😪😴"""
+
     HELP_MSG = """**
 **HELP MODULE**
 <development-stage>...."""
