@@ -220,11 +220,11 @@ async def cb_handler(client: illuzX, query):
                 caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
 
                 buttons = [[
-                  InlineKeyboardButton('Main Channel', url='https://t.me/Mvbzzer')
+                  InlineKeyboardButton('📍Mᴀɪɴ ᴄʜᴀɴɴᴇʟ📌', url='https://t.me/Mvbzzer')
                   ],[
-                  InlineKeyboardButton("Search Inline",switch_inline_query_current_chat='')
+                  InlineKeyboardButton("🔎Sᴇᴀʀᴄʜ Aɢᴀɪɴ 📌",switch_inline_query_current_chat='')
                   ],[
-                  InlineKeyboardButton("DataBase", url='https://t.me/Files_For_Bot')
+                  InlineKeyboardButton("🌸Dᴀᴛᴀʙᴀsᴇ🌸", url='https://t.me/Files_For_Bot')
                   ]]
                 
                 await query.answer()
