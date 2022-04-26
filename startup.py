@@ -10,7 +10,7 @@ class AtwFilt(object):
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-**HELP MODULE**
+Deployment stage
 <development-stage>...."""
     SOURCE_CODE = """
 **REPO**
