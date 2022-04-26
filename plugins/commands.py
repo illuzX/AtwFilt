@@ -11,5 +11,5 @@ db = Database()
 @illuzX.on_message(Worker.private & Worker.command(["start", "help", "about"]))
 async def start_handler(bot, message):
     await message.reply_text(
-        text="!!Maintenance!!\nBot Will Be Down For some couple of hours For Maintenance..Will Be UPDATED After Restart",
+        text="**!❌!Maintenance!❌!\n\nBot Will Be Down For some couple of hours For Maintenance..Will Be UPDATED After Restart**",
   )
