@@ -36,7 +36,7 @@ async def gen_link_s(bot, message):
     string = 'filep_' if message.text.lower().strip() == "/plink" else 'file_'
     string += file_id
     outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-    await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr}")
+    await message.reply(f"Here is your Link:\nhttps://t.me/{bot_info.BOT_USERNAME}?start={outstr}")
     
     
 @illuzX.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
@@ -79,7 +79,7 @@ async def gen_link_batch(bot, message):
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-        return await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
+        return await sts.edit(f"Here is your link https://t.me/{bot_info.BOT_USERNAME}?start=DSTORE-{b_64}")
 
     FRMT = "Generating Link...\nTotal Messages: `{total}`\nDone: `{current}`\nRemaining: `{rem}`\nStatus: `{sts}`"
 
