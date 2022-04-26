@@ -10,14 +10,11 @@ class AtwFilt(object):
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-Deployment stage
-<development-stage>...."""
+Deployment stage...."""
     SOURCE_CODE = """
 **REPO**
-
 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt-V2)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
-
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
     ABOUT_MSG = """
@@ -37,10 +34,10 @@ Deployment stage
 #✅CAPTION: {file_caption}
     FILE_CAPTIONS = """ 
 <code>{title}</code> 
-Size : <i>{size}</i>
+Size : <b>{size}</b>
 ━━━━━━━━━━━━━━━━━━━━━━
-<b>[Mᴏᴠɪᴇ Bᴀᴢᴢᴇʀ](https://t.me/mvb_tg)</b
->
+<b>[Mᴏᴠɪᴇ Bᴀᴢᴢᴇʀ](https://t.me/mvbzzer)</b
+>\n[Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ](https://t.me/mvb_tg)
 **"""
 
     
