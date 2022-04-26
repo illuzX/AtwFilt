@@ -3,7 +3,7 @@
 import re
 from pyrogram import Client as illuzX, filters
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, UsernameInvalid, UsernameNotModified
-from config import ADMINS, LOG_CHANNEL, FILE_STORE_CHANNEL, PUBLIC_FILE_STORE
+from config import ADMINS, LOG_CHANNEL, FILE_STORE_CHANNEL, PUBLIC_FILE_STORE, bot_info
 from plugins.new_module.kanged import unpack_new_file_id
 from plugins.database.meow_pm import temp
 import re
