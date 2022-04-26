@@ -9,7 +9,6 @@ from marshmallow.exceptions import ValidationError
 from config import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER, FORCES_SUB
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-from imdb import IMDb
 client = AsyncIOMotorClient(DATABASE_URI)
 db = client[DATABASE_NAME]
 instance = Instance.from_db(db)
