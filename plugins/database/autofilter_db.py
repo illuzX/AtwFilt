@@ -7,9 +7,9 @@ from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
 from config import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER, FORCES_SUB
-from imdb import IMDb
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
+from imdb import IMDb
 client = AsyncIOMotorClient(DATABASE_URI)
 db = client[DATABASE_NAME]
 instance = Instance.from_db(db)
@@ -220,5 +220,7 @@ async def get_poster(query, bulk=False, id=False):
         'url':f'https://www.imdb.com/title/tt{movieid}'
 
     }
+
+
 
 
