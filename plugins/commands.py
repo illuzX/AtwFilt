@@ -9,5 +9,7 @@ db = Database()
 
 
 @illuzX.on_message(Worker.private & Worker.command(["start"]))
-async def start_message(bot, message):
-        await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG
+async def start_handler(bot, message):
+    await message.reply_text(
+        text="!!Maintenance!!\nBot Will Be Down For some couple of hours For Maintenance..Will Be UPDATED After Restart",
+  )
