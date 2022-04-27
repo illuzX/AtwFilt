@@ -1,7 +1,8 @@
 import logging
 from pyrogram import Client as illuzX, filters as Worker, emoji
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument
-from plugins.database._utils import get_size, get_search_results, is_subscribed
+from plugins.database._utils import get_size,is_subscribed
+from plugins.database.autofilter_db import get_search_results
 from config import CACHE_TIME, AUTH_USERS, FORCES_SUB, CUSTOM_FILE_CAPTION
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or FORCES_SUB else CACHE_TIME
