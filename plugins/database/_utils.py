@@ -57,13 +57,3 @@ async def send_msg(user_id, message):
         return 400, f"{user_id} : user id invalid\n"
     except Exception as e:
         return 500, f"{user_id} : {traceback.format_exc()}\n"
-
-# ~~~~ Collections ~~~~ #
-
-class meow_temp(object):
-    ME = None # User Id
-    U_NAME = None # Username
-    B_NAME = None # Full Name 
-    BUTTONS = {} # AutoFilter
-    CURRENT=int(os.environ.get("SKIP", 2)) # Skip Files
-    CANCEL = False # Cancel Index
