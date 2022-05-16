@@ -56,7 +56,7 @@
 * `USE_CAPTION_FILTER`: Whether bot should use captions to improve search results. (True/False)
 
 ### RUNNING BOT 
-- [MOVIE SEARCHING BOT ](https:/t.me/Meow_pm_Bot
+- [MOVIE SEARCHING BOT ](https://t.me/Meow_pm_Bot
 ###  𝗗𝗲𝗽𝗹𝗼𝘆
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/illuzX/AtwFilt)
