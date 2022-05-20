@@ -2,7 +2,7 @@ class AtwFilt(object):
 
     DEFAULT_MSG = """hy {mention}..
     
-𝙷𝚎𝚕𝚕𝚘 [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌𝚊𝚕𝚕 𝚖𝚎 𝚊𝚜 [𝐅𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐯𝟐](t.me/{bot_username}) 
+Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌𝚊𝚕𝚕 𝚖𝚎 𝚊𝚜 [𝐅𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐯𝟐](t.me/{bot_username}) 
 
 𝙷𝚎𝚛𝚎 𝚈𝚘𝚞 𝙲𝚊𝚗 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎'𝚜, 𝙹𝚞𝚜𝚝 𝚂𝚎𝚗𝚝 [𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎](t.me/{bot_username})
 𝚆𝚒𝚝𝚑 𝙿𝚛𝚘𝚙𝚎𝚛 #𝙶𝚘𝚘𝚐𝚕𝚎 𝚂𝚙𝚎𝚕𝚕𝚒𝚗𝚐..!!
@@ -10,10 +10,11 @@ class AtwFilt(object):
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-Deployment stage...."""
+🙏.Verudhe Verupikkale Please 
+its Not A Perfect Bot Bcz I don't Have Time To Fix This Bot And Iam Removing The Sorcue Code 😪..."""
     SOURCE_CODE = """
 **REPO**
-[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://github.com/illuzX/AtwFilt)
+[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://t.me/Meow_pm_Bot)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
 
