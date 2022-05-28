@@ -5,10 +5,12 @@ from plugins.database.autofilter_db import Media
 from config import ADMINS
 logger = logging.getLogger(__name__)
 
-@illuzX.on_message(Worker.command('myDb') & Worker.user(ADMINS))
-async def total(bot, message):
-
-    msg = await message.reply("please wait...⏳️", 
+@illuzX.on_message(Worker.command('myDb'))
+async def total(b, m):
+    if m.from_user.id not in ADMINS:
+        await m.delete()
+        return 
+    msg = await m.reply("please wait...⏳️", 
  quote=True)
     try:
         total = await Media.count_documents()
