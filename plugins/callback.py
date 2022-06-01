@@ -220,7 +220,7 @@ async def cb_handler(client: illuzX, query):
                 caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
 
                 buttons = [[
-                  InlineKeyboardButton('📍Mᴀɪɴ ᴄʜᴀɴɴᴇʟ📌', url='https://t.me/Mvbzzer')
+                  InlineKeyboardButton('📍Mᴀɪɴ ᴄʜᴀɴɴᴇʟ📌', url='https://t.me/ML_MOVIE_LOKAM')
                   ],[
                   InlineKeyboardButton("🔎Sᴇᴀʀᴄʜ Aɢᴀɪɴ 📌",switch_inline_query_current_chat='')
                   ],[
@@ -244,17 +244,17 @@ async def cb_handler(client: illuzX, query):
                 buttons = [[
                  InlineKeyboardButton("🔍 𝐬𝐞𝐚𝐫𝐜𝐡 🔎" ,switch_inline_query_current_chat='')
                 ], [
-                 InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
+                 InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/ML_MOVIE_LOKAM"),
                 ], [
-                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/mvbzzer")
+                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/ML_MOVIE_LOKAM")
                  ]]
             else:
                 buttons = [[
                  InlineKeyboardButton("🔍 𝐬𝐞𝐚𝐫𝐜𝐡 🔎", switch_inline_query_current_chat='')
                 ], [
-                 InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
+                 InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/ML_MOVIE_LOKAM"),
                 ], [
-                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/mvbzzer")
+                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/ML_MOVIE_LOKAM")
                  ]]               
             await query.message.edit(text=DEFAULT_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
