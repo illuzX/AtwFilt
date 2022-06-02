@@ -3,8 +3,6 @@ import logging
 logger = logging.getLogger(__name__)
 
 import asyncio
-import aiofiles
-import aiofiles.os
 import datetime
 import traceback
 import random
