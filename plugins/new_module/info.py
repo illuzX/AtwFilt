@@ -1,7 +1,6 @@
 # © illuzx
 
 import shutil
-import psutil
 import config
 #import client 
 from pyrogram import Client as illuzx, filters 
