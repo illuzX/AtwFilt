@@ -11,7 +11,7 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 
 
-class Bot(Client
+class Bot(Client):
 
     async def start(self):
         b_users, b_chats = await db.get_banned()
