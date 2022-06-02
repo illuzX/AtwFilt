@@ -14,17 +14,17 @@ Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌�
 its Not A Perfect Bot Bcz I don't Have Time To Fix This Bot And Iam Removing The Sorcue Code 😪..."""
     SOURCE_CODE = """
 **REPO**
-[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://t.me/Meow_pm_Bot)
+[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://t.me/AdhavaaBiriyaniKittiyalo)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
-[𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
+[𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Bad_Bunny_444)"""
 
     ABOUT_MSG = """
 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 
-○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : [𝐈𝐥𝐥𝐮𝐳𝕏](t.me/grayhathacker767)
+○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : [𝐈𝐥𝐥𝐮𝐳𝕏](t.me/Bad_Bunny_444)
 ○ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : [𝐏𝐲𝐭𝐡𝐨𝐧 𝟑.𝟗.𝟏𝟎](https://www.python.org/)
 ○ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐲𝐧𝐜𝐢𝐨 𝟏.𝟒.𝟏𝟐](https://docs.pyrogram.org/)
-○ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : [𝐔𝐳𝕏_𝐁𝐨𝐭𝐬](https://t.me/UZX_BOTS)
+○ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : [𝐔𝐳𝕏_𝐁𝐨𝐭𝐬](https://t.me/ML_MOVIE_GROUP)
 ○ 𝐃𝐚𝐭𝐚𝐁𝐚𝐬𝐞:[𝐌𝐎𝐍𝐆𝐎𝔻𝔹](https://mongodb.com)
 
 """
@@ -68,6 +68,6 @@ Couldn't Find {query}?  Please Click Your Request Movie Name"""
 
 👤 Requested By : {mention}
 
-Uploder :[MOVIE BAZZER](t.me/mvbzzer)
+Uploder :[MOVIE BAZZER](t.me/ML_MOVIE_LOKAM)
 
 © **{chat}**"""
