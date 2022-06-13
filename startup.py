@@ -17,7 +17,7 @@ Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌�
 <p><b>DISCLAIMER</b></p>
  - PLEASE FORK AND USE,
  - GIVE A STAR ⭐ TO MY PROJECT,
- - CONTRIBUTORS ARE WLCOM\n
+ - CONTRIBUTORS ARE WLCOM
  - DON'T COPY PASTE AND SALE MY CODE 🤬
  <p><b>Repo</b></p>
 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://www.github.com/illuzX/AtwFilt)
