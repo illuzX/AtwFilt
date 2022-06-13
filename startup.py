@@ -10,15 +10,16 @@ Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌�
 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
-For Help Contact [uzxBots](t.me/uzx_bots)\n
-You want Sorcue Code Then Press On Sorcue Code Button..."""
+<p><b>Help Module</b></p>
+- For Help Contact [uzxBots](t.me/uzx_bots)\n
+- You want Sorcue Code Then Press On Sorcue Code Button..."""
     SOURCE_CODE = """
-DISCLAIMER> 
- PLEASE FORK AND USE 
- GIVE A STAR ⭐ TO MY PROJECT
- CONTRIBUTORS ARE WLCOM\n
- DON'T COPY PASTE AND SALE MY CODE 🤬
-
+<p><b>DISCLAIMER</b></p>
+ - PLEASE FORK AND USE,
+ - GIVE A STAR ⭐ TO MY PROJECT,
+ - CONTRIBUTORS ARE WLCOM\n
+ - DON'T COPY PASTE AND SALE MY CODE 🤬
+ <p><b>Repo</b></p>
 [𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://www.github.com/illuzX/AtwFilt)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
 [𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
