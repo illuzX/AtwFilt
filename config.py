@@ -14,7 +14,7 @@ def is_enabled(value, default):
 API_ID = int(environ["API_ID"])
 API_HASH = environ["API_HASH"]
 B_KEYS = environ["BOT_TOKEN"]
-START_MSG = environ.get("START_MSG",AtwFilt.DEFAULT_MSG)
+START_MSG = environ.get("START_MSG",AtwFilt.START_TXT)
 BOT_PICS = (environ.get('PICS', 'https://telegra.ph/file/d5074341e29977da5ae60.jpg https://telegra.ph/file/5687297fe4b13efa8d595.jpg')).split()
 SUPPORT = environ.get("SUPPORT", "https://www.google.com")
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "on")), True)
