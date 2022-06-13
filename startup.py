@@ -1,6 +1,6 @@
 class AtwFilt(object):
 
-    DEFAULT_MSG = """hy {mention}..
+    START_TXT = """hy {mention}..
     
 Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌𝚊𝚕𝚕 𝚖𝚎 𝚊𝚜 [𝐅𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐯𝟐](t.me/{bot_username}) 
 
