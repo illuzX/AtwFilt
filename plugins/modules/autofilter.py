@@ -14,7 +14,7 @@ async def group_filters(client, message):
         files = await get_filter_results(query=search)
         if files:
             for file in files:
-                file_id = file.file_id.id
+                file_id = file.file_id
                 filename = f"{get_size(file.file_size)} {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", callback_data=f"AtwFiltBot#{file_id}")]
