@@ -3,7 +3,7 @@ from plugins.modules.autofilter import group_filters, pm_autofilter
 from config import AUTH_GROUPS, AUTH_USERS
 from plugins.database.users_chats_db import db
 
-
+ #we no need Group Use So iam Disable This function
 @illuzX.on_message(Worker.text & Worker.group & Worker.incoming & Worker.chat(AUTH_GROUPS) if AUTH_GROUPS else Worker.text & Worker.group & Worker.incoming)
 async def groupfilters(client, message):
     await group_filters(client, message)
