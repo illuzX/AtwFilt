@@ -41,7 +41,7 @@ async def group_filters(client, message):
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
-            keyword = f"{message.chat.id}-{message.message_id}"
+            keyword = f"{message.chat.id}-{message.id}"
             BUTTONS[keyword] = {
                 "total" : len(btns),
                 "buttons" : btns
@@ -124,7 +124,7 @@ async def pm_autofilter(client, message):
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
-            keyword = f"{message.chat.id}-{message.message_id}"
+            keyword = f"{message.chat.id}-{message.id}"
             BUTTONS[keyword] = {
                 "total" : len(btns),
                 "buttons" : btns
@@ -172,6 +172,5 @@ async def pm_autofilter(client, message):
             await asyncio.sleep(300)
             await dell.delete()
         else:
-            dell=await message.reply_photo(photo=random.choice(BOT_PICS), caption=AtwFilt.GET_MOVIE_2.format(query=search, mention=message.from_user.mention, chat=bot_info.BOT_NAME), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(300)
-            await dell.delete()
+            await message.answer("sorry",show_alert=True)
+            
