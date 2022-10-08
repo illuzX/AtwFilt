@@ -1,13 +1,25 @@
 # import logging, os, traceback
 import logging, os, traceback
 from pyrogram.errors import UserNotParticipant, FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
-from config import FORCES_SUB
+from config import FORCE_SUB
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # ~~~~ File Size ~~~~ #
 
+class temp(object):
+    BANNED_USERS = []
+    BANNED_CHATS = []
+    ME = None
+    CURRENT=int(os.environ.get("SKIP", 4))
+    CANCEL = False
+    MELCOW = {}
+    U_NAME = None
+    B_NAME = None
+    G_LINK = None
+    SETTINGS = {}
+    
 def get_size(size):
     """Get size in readable format"""
 
@@ -29,7 +41,7 @@ def split_list(l, n):
 
 async def is_subscribed(bot, query):
     try:
-        user = await bot.get_chat_member(FORCES_SUB, query.from_user.id)
+        user = await bot.get_chat_member(FORCE_SUB, query.from_user.id)
     except UserNotParticipant:
         pass
     except Exception as e:

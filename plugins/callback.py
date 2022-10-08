@@ -4,7 +4,7 @@ from pyrogram.errors import UserIsBlocked, PeerIdInvalid
 from plugins.database.autofilter_db import  get_file_details
 from plugins.database._utils import get_size, is_subscribed
 from startup import AtwFilt
-from config import BUTTONS, FORCES_SUB, CUSTOM_FILE_CAPTION, START_MSG, DEV_NAME, bot_info, ADMINS
+from config import BUTTONS, FORCE_SUB, CUSTOM_FILE_CAPTION, START_MSG, DEV_NAME, bot_info, ADMINS
 
 
 @illuzX.on_callback_query()
@@ -188,7 +188,7 @@ async def cb_handler(client: illuzX, query):
             caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
 
             try:
-                if FORCES_SUB and not await is_subscribed(client, query):
+                if FORCE_SUB and not await is_subscribed(client, query):
                     await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
                     return
                 else:
@@ -208,7 +208,7 @@ async def cb_handler(client: illuzX, query):
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
 
         elif query.data.startswith("pmfile"):
-            if FORCES_SUB and not await is_subscribed(client, query):
+            if FORCE_SUB and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{bot_info.BOT_USERNAME}?start=subscribe")
                 return
             ident, file_id = query.data.split("#")
@@ -220,8 +220,7 @@ async def cb_handler(client: illuzX, query):
                 caption=CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, title=title, size=size, caption=files.caption)
 
                 buttons = [[
-                  InlineKeyboardButton('📍Mᴀɪɴ ᴄʜᴀɴɴᴇʟ📌', url='https://t.me/Mvbzzer')
-                  ],[
+                  InlineKeyboardButton('📍Mᴀɪɴ ᴄʜᴀɴɴᴇʟ📌', url='https://t.me/Mvbzzer'),
                   InlineKeyboardButton("🔎Sᴇᴀʀᴄʜ Aɢᴀɪɴ 📌",switch_inline_query_current_chat='')
                   ],[
                   InlineKeyboardButton("🌸Dᴀᴛᴀʙᴀsᴇ🌸", url='https://t.me/Files_For_Bot')
@@ -242,21 +241,23 @@ async def cb_handler(client: illuzX, query):
         elif query.data == "start":
             if query.from_user.id not in ADMINS: 
                 buttons = [[
-                 InlineKeyboardButton("🔍 𝐬𝐞𝐚𝐫𝐜𝐡 🔎" ,switch_inline_query_current_chat='')
+                 InlineKeyboardButton("Aʙᴏᴜᴛ  🦜" , callback_data="about"),
+                 InlineKeyboardButton("Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ🔎", switch_inline_query_current_chat='')
                 ], [
-                 InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
+                 InlineKeyboardButton("⚙️ BᴏT Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚙️", url="https://t.me/mvbzzer")
                 ], [
-                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/mvbzzer")
+                 InlineKeyboardButton("Hᴏᴡ Tᴏ Usᴇ Mᴇ ❓ " , url="https://t.me/+2QLvbzUUdB8yNjM1")
                  ]]
             else:
                 buttons = [[
-                 InlineKeyboardButton("🔍 𝐬𝐞𝐚𝐫𝐜𝐡 🔎", switch_inline_query_current_chat='')
+                 InlineKeyboardButton("Aʙᴏᴜᴛ  🦜" , callback_data="about"),
+                 InlineKeyboardButton("Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ🔎", switch_inline_query_current_chat='')
                 ], [
-                 InlineKeyboardButton("🔰𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰", url="https://t.me/MalayalamOTTUpdatesMvb"),
+                 InlineKeyboardButton("⚙️ BᴏT Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚙️", url="https://t.me/mvbzzer")
                 ], [
-                 InlineKeyboardButton("🔸𝐌𝐨𝐯𝐢𝐞𝐬 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔸", url="https://t.me/mvbzzer")
+                 InlineKeyboardButton("Hᴏᴡ Tᴏ Usᴇ Mᴇ ❓ ",  url="https://t.me/+2QLvbzUUdB8yNjM1")
                  ]]               
-            await query.message.edit(text=AtwFilt.START_TXT.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=AtwFilt.START_TXT.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=False)
 
         elif query.data == "help":
             buttons = [[

@@ -1,11 +1,11 @@
 class AtwFilt(object):
 
     START_TXT = """hy {mention}..
-    
 Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌𝚊𝚕𝚕 𝚖𝚎 𝚊𝚜 [𝐅𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐯𝟐](t.me/{bot_username}) \n
-𝙷𝚎𝚛𝚎 𝚈𝚘𝚞 𝙲𝚊𝚗 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎'𝚜, 𝙹𝚞𝚜𝚝 𝚂𝚎𝚗𝚝 [𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎](t.me/{bot_username})
+𝙷𝚎𝚛𝚎 𝚈𝚘𝚞 𝙲𝚊𝚗 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎'𝚜, 𝙹𝚞𝚜𝚝 𝚂𝚎𝚗𝚝
+[𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎](t.me/{bot_username})
 𝚆𝚒𝚝𝚑 𝙿𝚛𝚘𝚙𝚎𝚛 #𝙶𝚘𝚘𝚐𝚕𝚎 𝚂𝚙𝚎𝚕𝚕𝚒𝚗𝚐..!!\n
-𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help😂😂"""
+𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐥𝐢𝐜𝐤 /help"""
 
     HELP_MSG = """**
 <p><b>Help Module</b></p>
@@ -13,24 +13,24 @@ Iam [{bot_name}](t.me/{bot_username}) 𝙾𝚛 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚌�
 - You want Sorcue Code Then Press On Sorcue Code Button..."""
     SOURCE_CODE = """
 <p><b>DISCLAIMER</b></p>
- - PLEASE FORK AND USE,
- - GIVE A STAR ⭐ TO MY PROJECT,
- - CONTRIBUTORS ARE WLCOM
- - DON'T COPY PASTE AND SALE MY CODE 🤬
+ - **__PLEASE FORK AND USE__**,
+ - **__GIVE A STAR ⭐ TO MY PROJECT__**,
+ - **__CONTRIBUTORS ARE WLCOM__**
+ 
  <p><b>Repo</b></p>
-[𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞](https://www.github.com/illuzX/AtwFilt)
+[𝐂𝐨𝐝𝐞](https://www.github.com/illuzX/AtwFilt)
 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫**
-[𝐈𝐥𝐥𝐮𝐳𝐗](t.me/Grayhathacker767)"""
+[𝐈𝐥𝐥𝐮𝐳𝐗](t.me/illuzX3)"""
 
     ABOUT_MSG = """
 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 
-○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : [𝐈𝐥𝐥𝐮𝐳𝕏](t.me/illuzX)
-○ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : [𝐏𝐲𝐭𝐡𝐨𝐧 𝟑.𝟗.𝟏0](https://www.python.org/)
-○ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐲𝐧𝐜𝐢𝐨 𝟏.𝟒.𝟏7](https://docs.pyrogram.org/)
+○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : [𝐈𝐥𝐥𝐮𝐳𝕏](t.me/illuzX3)
+○ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : [𝐏𝐲𝐭𝐡𝐨𝐧 3.10.6](https://www.python.org/)
+○ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 2.0.57](https://docs.pyrogram.org/)
 ○ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : [𝐔𝐳𝕏_𝐁𝐨𝐭𝐬](https://t.me/UZX_BOTS)
 ○ 𝐃𝐚𝐭𝐚𝐁𝐚𝐬𝐞:[𝐌𝐎𝐍𝐆𝐎𝔻𝔹](https://mongodb.com)
-○ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬 : [𝐁𝐞𝐭𝐚 𝟏.𝟎.𝟏](t.me/meow_pm_bot)
+○ 𝐁𝐮𝐢𝐥𝐝 𝐒𝐭𝐚𝐭𝐮𝐬 : [V2](t.me/meow_pm_bot)
 """
 #https://github.com/illuzX/AtwFilt/commit/42d151f309bcfc8fe667a9379a7609633705c4e
 
