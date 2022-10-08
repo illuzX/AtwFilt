@@ -1,4 +1,4 @@
-pyrogram
+pyrogram>=2.0.56
 pyromod
 requests
 aiofiles
